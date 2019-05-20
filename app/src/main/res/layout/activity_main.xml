@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_date"
+        android:layout_width="144dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="128dp"
+        android:layout_weight=".28"
+        android:background="@drawable/background"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/relative_cinema"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Spinner
+            android:id="@+id/spinner_date"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="13dp"
+            android:background="@android:color/transparent"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="-46dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="13dp"
+            android:layout_toEndOf="@+id/spinner_date"
+            android:contentDescription="@string/spinner_icon"
+            android:src="@drawable/drop" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_time"
+        android:layout_width="144dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="128dp"
+        android:layout_weight=".28"
+        android:background="@drawable/background"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@id/relative_date"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Spinner
+            android:id="@+id/spinner_time"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="11dp"
+            android:background="@android:color/transparent"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="-46dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="11dp"
+            android:layout_toEndOf="@+id/spinner_time"
+            android:contentDescription="@string/spinner_icon"
+            android:src="@drawable/drop" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_cinema"
+        android:layout_width="330dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="128dp"
+        android:layout_weight=".28"
+        android:background="@drawable/background"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137">
+
+        <Spinner
+            android:id="@+id/spinner_movie"
+            android:layout_width="299dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="11dp"
+            android:layout_toEndOf="@+id/spinner_movie"
+            android:contentDescription="@string/spinner_icon"
+            android:src="@drawable/drop" />
+
+    </RelativeLayout>
+
+        <!--suppress AndroidDomInspection -->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/float_button"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="proceed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.975"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.975"
+            app:srcCompat="@drawable/arrow_right" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:text="@string/movie_title"
+            app:layout_constraintBottom_toTopOf="@+id/relative_cinema"
+            app:layout_constraintEnd_toEndOf="@+id/relative_time"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="@+id/relative_date"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/main_title"
+            app:layout_constraintVertical_bias="0.368" />
+
+</android.support.constraint.ConstraintLayout>
