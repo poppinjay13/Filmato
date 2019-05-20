@@ -33,11 +33,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         int resource = modelClassList.get(listPosition).getImageResource();
         String title = modelClassList.get(listPosition).getTitle();
         holder.setData(resource,title);
-        holder.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v) {
-                // perform your operations here
-            }
-        });
+        
     }
 
     // get the size of the list
