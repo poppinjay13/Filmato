@@ -25,6 +25,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //retrieve movie_data and set it in view
+
         //load cinema spinner in the activity
         Spinner cinema_spinner = findViewById(R.id.spinner_movie);
         final String[] cinemas = {
@@ -136,5 +138,9 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(MainActivity.this, PaymentActivity.class);
         startActivity(intent);
         finish();
+    }
+
+    public void select(View view) {
+        view.setBackgroundResource(R.drawable.seat_blue);
     }
 }

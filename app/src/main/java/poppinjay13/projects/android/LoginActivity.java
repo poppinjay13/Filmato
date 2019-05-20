@@ -113,7 +113,7 @@ public class LoginActivity extends AppCompatActivity {
             String personEmail = acct.getEmail();
             String personId = acct.getId();
             Toast.makeText(getApplicationContext(), "Welcome "+personGivenName, Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            Intent intent = new Intent(LoginActivity.this, MovieActivity.class);
             startActivity(intent);
             finish();
         }

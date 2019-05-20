@@ -1,5 +1,6 @@
 package poppinjay13.projects.android;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -65,14 +66,14 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 @Override
                 public void onClick(View v) {
                     Log.d("Clicked", "Movie Selection: " + titleText);
-                    TextView main_title = itemView.findViewById(R.id.main_title);
-                    main_title.setText(titleText);
+                    Intent intent = new Intent(imageView.getContext(), MainActivity.class );
+                    imageView.getContext().startActivity(intent);
                 }
             });
         }
         @Override
         public void onClick(View view) {
-            Log.d("onclick", "Clicked " + title.getText());
+            //implemented for OnClickListener
         }
     }
 }
