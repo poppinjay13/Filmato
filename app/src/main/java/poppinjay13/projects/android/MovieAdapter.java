@@ -67,6 +67,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 public void onClick(View v) {
                     Log.d("Clicked", "Movie Selection: " + titleText);
                     Intent intent = new Intent(imageView.getContext(), MainActivity.class );
+                    intent.putExtra("Title", titleText);
                     imageView.getContext().startActivity(intent);
                 }
             });

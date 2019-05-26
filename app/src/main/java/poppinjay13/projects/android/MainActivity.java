@@ -8,7 +8,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -17,15 +19,25 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
+import java.util.ArrayList;
+
+import poppinjay13.projects.android.customfonts.Button_Roboto_Medium;
+import poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular;
+
 public class MainActivity extends Activity {
     GoogleSignInClient mGoogleSignInClient;
-
+    ArrayList<String> seats = new ArrayList<String>();
+    final double base_price = 800.00;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         //retrieve movie_data and set it in view
+        Intent intent = getIntent();
+        String title = intent.getStringExtra("Title");
+        TextView textView = findViewById(R.id.main_title);
+        textView.setText(title);
 
         //load cinema spinner in the activity
         Spinner cinema_spinner = findViewById(R.id.spinner_movie);
@@ -141,6 +153,39 @@ public class MainActivity extends Activity {
     }
 
     public void select(View view) {
-        view.setBackgroundResource(R.drawable.seat_blue);
+        String name = view.getResources().getResourceEntryName(view.getId());
+        int view_id = view.getId();
+        ImageView iv=findViewById(view_id);
+        String image = (String) iv.getTag();
+        String available = "R.drawable.ic_availabe_seat1";
+        String selected = "R.drawable.ic_selected_seat1";
+        if (image.equals(available)) {
+            iv.setImageResource(R.drawable.ic_selected_seat1);
+            iv.setTag(selected);
+            add(name);
+        } else if (image.equals(selected)) {
+            iv.setImageResource(R.drawable.ic_availabe_seat1);
+            iv.setTag(available);
+            delete(name);
+        } else {
+            Log.d("Seats", "This Should Really Not Happen");
+        }
+    }
+
+    public void add(String id){
+        seats.add(id);
+        update();
+    }
+    public void delete(String id){
+        seats.remove(id);
+        update();
+    }
+    public void update(){
+        int size = seats.size();
+        double price = base_price*size;
+        MyTextView_Roboto_Regular seats_no = findViewById(R.id.seats_selected);
+        Button_Roboto_Medium btn_pay = findViewById(R.id.button_pay);
+        seats_no.setText(size+" seats selected");
+        btn_pay.setText("Pay Ksh "+price);
     }
 }

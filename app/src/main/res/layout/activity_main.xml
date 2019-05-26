@@ -1,396 +1,1057 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <RelativeLayout
-        android:id="@+id/relative_date"
-        android:layout_width="144dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="128dp"
-        android:layout_weight=".28"
-        android:background="@drawable/background"
-        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#eef3f6"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/relative_cinema"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
 
-        <Spinner
-            android:id="@+id/spinner_date"
-            android:layout_width="135dp"
-            android:layout_height="35dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginBottom="13dp"
-            android:background="@android:color/transparent"
-            android:foregroundGravity="center"
-            android:gravity="center"
-            android:spinnerMode="dropdown" />
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/movie_title" />
 
-        <ImageView
-            android:layout_width="45dp"
-            android:layout_height="35dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center"
-            android:layout_marginStart="-46dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="13dp"
-            android:layout_toEndOf="@+id/spinner_date"
-            android:contentDescription="@string/spinner_icon"
-            android:src="@drawable/drop" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/relative_time"
-        android:layout_width="144dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="128dp"
-        android:layout_weight=".28"
-        android:background="@drawable/background"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toEndOf="@id/relative_date"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <Spinner
-            android:id="@+id/spinner_time"
-            android:layout_width="135dp"
-            android:layout_height="35dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginBottom="11dp"
-            android:background="@android:color/transparent"
-            android:foregroundGravity="center"
-            android:gravity="center"
-            android:spinnerMode="dropdown" />
-
-        <ImageView
-            android:layout_width="45dp"
-            android:layout_height="35dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center"
-            android:layout_marginStart="-46dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="11dp"
-            android:layout_toEndOf="@+id/spinner_time"
-            android:contentDescription="@string/spinner_icon"
-            android:src="@drawable/drop" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/relative_cinema"
-        android:layout_width="330dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="128dp"
-        android:layout_weight=".28"
-        android:background="@drawable/background"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.318"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.137">
-
-        <Spinner
-            android:id="@+id/spinner_movie"
-            android:layout_width="299dp"
-            android:layout_height="38dp"
-            android:layout_alignParentStart="true"
-            android:layout_gravity="center"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="10dp"
-            android:background="@android:color/transparent"
-            android:foregroundGravity="center"
-            android:gravity="center"
-            android:spinnerMode="dropdown" />
-
-        <ImageView
-            android:layout_width="56dp"
-            android:layout_height="40dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center"
-            android:layout_marginStart="-50dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="11dp"
-            android:layout_toEndOf="@+id/spinner_movie"
-            android:contentDescription="@string/spinner_icon"
-            android:src="@drawable/drop" />
-
-    </RelativeLayout>
-
-        <TextView
+        <RelativeLayout
+            android:id="@+id/relative_cinema"
             android:layout_width="300dp"
             android:layout_height="40dp"
+            android:layout_gravity="center"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:gravity="center"
-            android:layout_marginBottom="8dp"
-            android:text="@string/movie_title"
-            app:layout_constraintBottom_toTopOf="@+id/relative_cinema"
-            app:layout_constraintEnd_toEndOf="@+id/relative_time"
-            app:layout_constraintHorizontal_bias="0.485"
-            app:layout_constraintStart_toStartOf="@+id/relative_date"
+            android:background="@drawable/background"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.318"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:id="@+id/main_title"
-            app:layout_constraintVertical_bias="0.368" />
+            app:layout_constraintVertical_bias="0.137">
 
-    <android.support.constraint.ConstraintLayout
+            <Spinner
+                android:id="@+id/spinner_movie"
+                android:layout_width="299dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="-50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="11dp"
+                android:layout_toEndOf="@+id/spinner_movie"
+                android:contentDescription="@string/spinner_icon"
+                android:src="@drawable/drop" />
+
+        </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <ImageView
-            android:id="@+id/seat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <RelativeLayout
+            android:id="@+id/relative_date"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:onClick="select"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.18"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.501"
-            app:srcCompat="@drawable/seat_clear" />
+            android:background="@drawable/background"
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@id/seat"
+            <Spinner
+                android:id="@+id/spinner_date"
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="13dp"
+                android:background="@android:color/transparent"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="-46dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="13dp"
+                android:layout_toEndOf="@+id/spinner_date"
+                android:contentDescription="@string/spinner_icon"
+                android:src="@drawable/drop" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_time"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/relative_date"
+            android:background="@drawable/background"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_time"
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="11dp"
+                android:background="@android:color/transparent"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="-46dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="11dp"
+                android:layout_toEndOf="@+id/spinner_time"
+                android:contentDescription="@string/spinner_icon"
+                android:src="@drawable/drop" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+        <poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:onClick="select"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.09"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.501"
-            app:srcCompat="@drawable/seat_clear" />
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rect1"
+            android:elevation="1dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:text="@string/screen" />
 
-        <ImageView
-            android:id="@id/seat"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:onClick="select"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.09"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.36"
-            app:srcCompat="@drawable/seat_clear" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@id/seat"
+            <ImageView
+                android:id="@+id/A1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/A2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/A3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/A4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/A5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/A6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:onClick="select"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.18"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.36"
-            app:srcCompat="@drawable/seat_clear" />
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@id/seat"
+            <ImageView
+                android:id="@+id/B1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/B2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/B3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/B4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/B5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/B6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/B7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/B8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:onClick="select"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.18"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.122"
-            app:srcCompat="@drawable/seat_clear" />
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@id/seat"
+            <ImageView
+                android:id="@+id/C1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/C2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/C3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/C4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_taken_seat1" />
+
+            <ImageView
+                android:id="@+id/C5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_taken_seat1" />
+
+            <ImageView
+                android:id="@+id/C6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_taken_seat1" />
+
+            <ImageView
+                android:id="@+id/C7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/C8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/C9"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/C10"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:onClick="select"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.303"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.245"
-            app:srcCompat="@drawable/seat_clear" />
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@id/seat"
+            <ImageView
+                android:id="@+id/D1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/D2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/D3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/D4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/D5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_taken_seat1" />
+
+            <ImageView
+                android:id="@+id/D6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_taken_seat1" />
+
+            <ImageView
+                android:id="@+id/D7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_taken_seat1" />
+
+            <ImageView
+                android:id="@+id/D8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/D9"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/D10"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:onClick="select"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.18"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.245"
-            app:srcCompat="@drawable/seat_clear" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@id/seat"
+            <ImageView
+                android:id="@+id/E1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/E2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/E3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/E4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/E5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/E6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_taken_seat1" />
+
+            <ImageView
+                android:id="@+id/E7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_taken_seat1" />
+
+            <ImageView
+                android:id="@+id/E8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/E9"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/E10"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.473"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.245"
-            app:srcCompat="@drawable/seat_dark" />
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@id/seat"
+            <ImageView
+                android:id="@+id/F1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/F2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/F3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_taken_seat1" />
+
+            <ImageView
+                android:id="@+id/F4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_taken_seat1" />
+
+            <ImageView
+                android:id="@+id/F5"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/F6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_taken_seat1" />
+
+            <ImageView
+                android:id="@+id/F7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_taken_seat1" />
+
+            <ImageView
+                android:id="@+id/F8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/F9"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/F10"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.39"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.245"
-            app:srcCompat="@drawable/seat_dark" />
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@id/seat"
+
+            <ImageView
+                android:id="@+id/G1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/G2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/G3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/G4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/G5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/G6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/G7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/G8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/G9"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/G10"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.473"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.122"
-            app:srcCompat="@drawable/seat_dark" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@id/seat"
-            android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/H1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/H2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/H3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="8dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/H4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/H5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/H6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/H7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+
+            <ImageView
+                android:id="@+id/H8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                android:src="@drawable/ic_availabe_seat1"
+                android:tag="R.drawable.ic_availabe_seat1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.39"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.122"
-            app:srcCompat="@drawable/seat_dark" />
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@id/seat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.303"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.122"
-            app:srcCompat="@drawable/seat_dark" />
-    </android.support.constraint.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-    <!--suppress AndroidDomInspection -->
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/float_button"
-        android:layout_width="55dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="0dp"
-        android:clickable="true"
-        android:focusable="true"
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_availabe_seat1" />
+
+                <poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="AVAILABLE"
+                    android:textColor="#5e7391"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_taken_seat1" />
+
+                <poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="TAKEN"
+                    android:textColor="#5e7391"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_selected_seat1" />
+
+                <poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="SELECTED"
+                    android:textColor="#5e7391"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/seats_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/seats_selected"
+        android:textColor="#5e7391"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <poppinjay13.projects.android.customfonts.Button_Roboto_Medium
+        android:id="@+id/button_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/signin_rect"
+        android:elevation="1dp"
+        android:gravity="center"
         android:onClick="proceed"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.975"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.975"
-        app:srcCompat="@drawable/arrow_right" />
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/charges"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
-</android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

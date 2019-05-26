@@ -22,6 +22,10 @@
         <activity android:name=".PaymentActivity"/>
         <activity android:name=".SplashScreen"/>
         <activity android:name=".MovieActivity"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

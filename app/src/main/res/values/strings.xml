@@ -7,4 +7,7 @@
     <string name="movie_view">Oops</string>
     <string name="movie_title">Movie Title</string>
     <string name="spinner_icon">spinner icon</string>
+    <string name="screen">The Screen Is This Way Please</string>
+    <string name="seats_selected">No seats selected</string>
+    <string name="charges">Pay Ksh 0.00</string>
 </resources>
