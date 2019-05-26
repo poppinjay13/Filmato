@@ -147,7 +147,10 @@ public class MainActivity extends Activity {
 
 
     public void proceed(View view) {
+        int size = seats.size();
+        double final_sum =  base_price*size;
         Intent intent = new Intent(MainActivity.this, PaymentActivity.class);
+        intent.putExtra("Amount", final_sum);
         startActivity(intent);
         finish();
     }

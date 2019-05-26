@@ -1,5 +1,6 @@
 package poppinjay13.projects.android;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -31,6 +32,10 @@ public class PaymentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
 
+        //retrieve amount to be charged
+        Intent intent = getIntent();
+        final String amount = intent.getStringExtra("Amount");
+
         editTextPhone =findViewById(R.id.editText);
         btnLipa =findViewById(R.id.sendButton);
         btnLipa.setOnClickListener(new View.OnClickListener() {
@@ -42,7 +47,7 @@ public class PaymentActivity extends AppCompatActivity {
                     Toast.makeText(PaymentActivity.this, "please insert phone number", Toast.LENGTH_LONG).show();
                     return;
                 }
-                LipaNaMpesa(phonenumber);
+                LipaNaMpesa(phonenumber,amount);
             }
         });
         //Init daraja
@@ -61,15 +66,15 @@ public class PaymentActivity extends AppCompatActivity {
         });
     }
 
-    private void LipaNaMpesa(String phonenumber) {
+    private void LipaNaMpesa(String phonenumber,String charges) {
 //party A is the number sending the money.It has to be a valid safaricom phone number
-// phonenumber is the mobile number to receive the stk pin prompt.The number can be the sam as partyA.
+// phonenumber is the mobile number to receive the stk pin prompt.The number can be the same as partyA.
 //BusinessShort code = PartyB
         final LNMExpress lnmExpress = new LNMExpress(
                 "174379",
                 "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919",
                 TransactionType.CustomerBuyGoodsOnline,
-                "50",
+                charges,
                 "254708374149",
                 "174379",
                 phonenumber,
