@@ -1,12 +1,11 @@
-package poppinjay13.projects.android.customfonts;
+package poppinjay13.projects.android.customfonts1;
 
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
 
-public class MyTextView_Roboto_Light extends TextView {
+public class MyTextView_Roboto_Light extends android.support.v7.widget.AppCompatTextView {
 
     public MyTextView_Roboto_Light(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);

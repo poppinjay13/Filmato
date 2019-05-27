@@ -10,4 +10,5 @@
     <string name="screen">The Screen Is This Way Please</string>
     <string name="seats_selected">No seats selected</string>
     <string name="charges">Pay Ksh 0.00</string>
+    <string name="no_prompt">PHONE NUMBER (254123456789)</string>
 </resources>

@@ -21,13 +21,13 @@ import com.google.android.gms.tasks.Task;
 
 import java.util.ArrayList;
 
-import poppinjay13.projects.android.customfonts.Button_Roboto_Medium;
-import poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular;
+import poppinjay13.projects.android.customfonts1.Button_Roboto_Medium;
+import poppinjay13.projects.android.customfonts1.MyTextView_Roboto_Regular;
 
 public class MainActivity extends Activity {
     GoogleSignInClient mGoogleSignInClient;
     ArrayList<String> seats = new ArrayList<String>();
-    final double base_price = 800.00;
+    final int base_price = 800;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -148,7 +148,7 @@ public class MainActivity extends Activity {
 
     public void proceed(View view) {
         int size = seats.size();
-        double final_sum =  base_price*size;
+        int final_sum =  base_price*size;
         Intent intent = new Intent(MainActivity.this, PaymentActivity.class);
         intent.putExtra("Amount", final_sum);
         startActivity(intent);
@@ -185,7 +185,7 @@ public class MainActivity extends Activity {
     }
     public void update(){
         int size = seats.size();
-        double price = base_price*size;
+        int price = base_price*size;
         MyTextView_Roboto_Regular seats_no = findViewById(R.id.seats_selected);
         Button_Roboto_Medium btn_pay = findViewById(R.id.button_pay);
         seats_no.setText(size+" seats selected");

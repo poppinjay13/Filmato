@@ -1,24 +1,22 @@
-package poppinjay13.projects.android.customfonts;
+package poppinjay13.projects.android.customfonts1;
 
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
+public class EditText_Roboto_Light extends android.support.v7.widget.AppCompatEditText {
 
-public class MyTextView_Roboto_Light extends TextView {
-
-    public MyTextView_Roboto_Light(Context context, AttributeSet attrs, int defStyle) {
+    public EditText_Roboto_Light(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init();
     }
 
-    public MyTextView_Roboto_Light(Context context, AttributeSet attrs) {
+    public EditText_Roboto_Light(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public MyTextView_Roboto_Light(Context context) {
+    public EditText_Roboto_Light(Context context) {
         super(context);
         init();
     }

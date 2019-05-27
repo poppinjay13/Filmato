@@ -167,7 +167,7 @@
         </RelativeLayout>
     </RelativeLayout>
 
-        <poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular
+        <poppinjay13.projects.android.customfonts1.MyTextView_Roboto_Regular
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -962,7 +962,7 @@
                     android:layout_height="20dp"
                     android:src="@drawable/ic_availabe_seat1" />
 
-                <poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular
+                <poppinjay13.projects.android.customfonts1.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -986,7 +986,7 @@
                     android:layout_height="20dp"
                     android:src="@drawable/ic_taken_seat1" />
 
-                <poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular
+                <poppinjay13.projects.android.customfonts1.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -1010,7 +1010,7 @@
                     android:layout_height="20dp"
                     android:src="@drawable/ic_selected_seat1" />
 
-                <poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular
+                <poppinjay13.projects.android.customfonts1.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -1023,7 +1023,7 @@
             </LinearLayout>
         </LinearLayout>
 
-    <poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular
+    <poppinjay13.projects.android.customfonts1.MyTextView_Roboto_Regular
         android:id="@+id/seats_selected"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -1035,7 +1035,7 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <poppinjay13.projects.android.customfonts.Button_Roboto_Medium
+    <poppinjay13.projects.android.customfonts1.Button_Roboto_Medium
         android:id="@+id/button_pay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
