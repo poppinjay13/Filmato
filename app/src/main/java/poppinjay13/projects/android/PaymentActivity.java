@@ -91,7 +91,7 @@ public class PaymentActivity extends AppCompatActivity {
                     @Override
                     public void onResult(@NonNull LNMResult lnmResult) {
                         Log.i(PaymentActivity.this.getClass().getSimpleName(), lnmResult.ResponseDescription);
-                        Toast.makeText(getApplicationContext(), "Payment Succesful", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "M-PESA Direct Payment Starting", Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
