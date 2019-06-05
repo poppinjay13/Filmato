@@ -46,7 +46,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
 
     // Static inner class to initialize the views of rows
-    static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    static class ViewHolder extends RecyclerView.ViewHolder{
 
         private TextView title;
         private ImageView imageView;
@@ -54,7 +54,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         private ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            itemView.setOnClickListener(this);
             title = itemView.findViewById(R.id.movie_title);
             imageView = itemView.findViewById(R.id.movie_view);
         }
@@ -71,10 +70,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                     imageView.getContext().startActivity(intent);
                 }
             });
-        }
-        @Override
-        public void onClick(View view) {
-            //implemented for OnClickListener
         }
     }
 }
