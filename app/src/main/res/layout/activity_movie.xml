@@ -7,9 +7,18 @@
     android:layout_height="match_parent"
     >
 
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:text="Movies Currently Showing"/>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/movies_recycler"
         android:layout_width="match_parent"
-        android:layout_height="592dp"
+        android:layout_height="match_parent"
         android:scrollbars="none" />
 </LinearLayout>
