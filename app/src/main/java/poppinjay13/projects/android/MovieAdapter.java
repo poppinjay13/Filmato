@@ -15,10 +15,10 @@ import java.util.List;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
 
-    private List<MovieItem> modelClassList;
+    private List<MoviePOJO> modelClassList;
 
     // Constructor of the class
-    public MovieAdapter(List<MovieItem> modelClassList) {
+    public MovieAdapter(List<MoviePOJO> modelClassList) {
         this.modelClassList = modelClassList;
     }
     // specify the row layout file and click for each row

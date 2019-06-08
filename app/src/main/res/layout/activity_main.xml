@@ -969,7 +969,7 @@
                     android:layout_marginTop="3dp"
                     android:text="AVAILABLE"
                     android:textColor="#5e7391"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
 
             </LinearLayout>
@@ -993,7 +993,7 @@
                     android:layout_marginTop="3dp"
                     android:text="TAKEN"
                     android:textColor="#5e7391"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
 
             </LinearLayout>

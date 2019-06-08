@@ -1,30 +1,30 @@
 package poppinjay13.projects.android.customfonts;
-
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.Button;
 
-public class Button_Roboto_Medium extends android.support.v7.widget.AppCompatButton {
 
-    public Button_Roboto_Medium(Context context, AttributeSet attrs, int defStyle) {
+public class Button_SF_Pro_Display_Medium extends android.support.v7.widget.AppCompatButton {
+
+    public Button_SF_Pro_Display_Medium(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init();
     }
 
-    public Button_Roboto_Medium(Context context, AttributeSet attrs) {
+    public Button_SF_Pro_Display_Medium(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public Button_Roboto_Medium(Context context) {
+    public Button_SF_Pro_Display_Medium(Context context) {
         super(context);
         init();
     }
 
     private void init() {
         if (!isInEditMode()) {
-            Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/Roboto-Regular.ttf");
+            Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/SF-Pro-Display-Medium.otf");
             setTypeface(tf);
         }
     }

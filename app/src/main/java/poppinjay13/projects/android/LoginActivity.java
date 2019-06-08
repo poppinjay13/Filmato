@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -27,12 +28,12 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        final EditText usernameEditText = findViewById(R.id.username);
-        final EditText passwordEditText = findViewById(R.id.password);
-        final ImageView loginImg = findViewById(R.id.login_img);
+        final EditText email = findViewById(R.id.log_email);
+        final EditText password = findViewById(R.id.log_password);
+        final Button loginbtn = findViewById(R.id.login_btn);
         initGoogleSignIn();
 
-        loginImg.setOnClickListener(new View.OnClickListener() {
+        loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Welcome Stranger", Toast.LENGTH_SHORT).show();
@@ -136,6 +137,12 @@ public class LoginActivity extends AppCompatActivity {
                         finish();
                     }
                 });
+    }
+
+    public void signUp(View view) {
+        Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     // --Commented out by Inspection START (5/2/2019 8:53 AM):

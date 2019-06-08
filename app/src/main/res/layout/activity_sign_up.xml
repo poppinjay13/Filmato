@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:layout_marginBottom="12dp"
     android:background="@color/white"
-    tools:context=".LoginActivity">
+    tools:context=".SignUpActivity">
 
 
     <LinearLayout
@@ -17,20 +17,18 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_marginTop="80.2dp"
+            android:layout_marginTop="50.2dp"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_right"/>
-
         <poppinjay13.projects.android.customfonts.MyTextView_SF_Pro_Display_Medium
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome Back!"
+            android:text="Welcome Aboard!"
             android:textColor="#323643"
             android:textSize="21.3sp"/>
-
         <poppinjay13.projects.android.customfonts.MyTextView_SF_Pro_Display_Light
             android:layout_gravity="center"
             android:layout_marginTop="9.6dp"
@@ -38,13 +36,90 @@
             android:layout_height="wrap_content"
             android:textSize="15.4sp"
             android:textColor="#606470"
-            android:text="Login to continue using Filmato"/>
+            android:text="Sign-up with us in a few simple steps"/>
 
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="123.1dp"
+            android:layout_marginTop="34.1dp"
+            android:layout_marginLeft="28.7dp"
+            android:layout_marginRight="28.9dp"
+            app:cardElevation="1dp"
+            app:cardCornerRadius="6dp"
+            app:cardBackgroundColor="@color/white">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rect"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_profile"/>
+
+                <poppinjay13.projects.android.customfonts.EditText__SF_Pro_Display_Light
+                    android:id="@+id/name"
+                    android:background="#00000000"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Name"
+                    android:textColorHint="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19.2dp"
+            android:layout_marginLeft="28.7dp"
+            android:layout_marginRight="28.9dp"
+            app:cardElevation="1dp"
+            app:cardCornerRadius="6dp"
+            app:cardBackgroundColor="@color/white">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rect"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_phone_call_1"/>
+
+                <poppinjay13.projects.android.customfonts.EditText__SF_Pro_Display_Light
+                    android:id="@+id/phone"
+                    android:background="#00000000"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Phone Number"
+                    android:textColorHint="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19.2dp"
             android:layout_marginLeft="28.7dp"
             android:layout_marginRight="28.9dp"
             app:cardElevation="1dp"
@@ -52,7 +127,6 @@
             app:cardBackgroundColor="@color/white">
 
             <LinearLayout
-                android:id="@+id/linear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -66,7 +140,7 @@
                     android:src="@drawable/mail"/>
 
                 <poppinjay13.projects.android.customfonts.EditText__SF_Pro_Display_Light
-                    android:id="@+id/log_email"
+                    android:id="@+id/email"
                     android:background="#00000000"
                     android:layout_marginLeft="10dp"
                     android:hint="Email"
@@ -79,8 +153,6 @@
 
         </android.support.v7.widget.CardView>
 
-
-
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -90,7 +162,6 @@
             app:cardElevation="1dp"
             app:cardCornerRadius="6dp"
             app:cardBackgroundColor="@color/white">
-
 
 
 
@@ -108,13 +179,13 @@
                     android:src="@drawable/lock"/>
 
                 <poppinjay13.projects.android.customfonts.EditText__SF_Pro_Display_Light
-                    android:id="@+id/log_password"
-                    android:background="#00000000"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Password"
-                    android:textColorHint="#000000"
+                    android:id="@+id/password_signup"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="#00000000"
+                    android:hint="Password"
+                    android:textColorHint="#000000" />
 
 
             </LinearLayout>
@@ -122,37 +193,20 @@
         </android.support.v7.widget.CardView>
 
 
-        <poppinjay13.projects.android.customfonts.MyTextView_SF_Pro_Display_Light
-            android:layout_gravity="right"
-            android:layout_marginTop="19.2dp"
-            android:layout_marginRight="28.9dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Forgot password?"
-            android:textColor="#606470"
-            android:textSize="15.4sp"/>
-
-
         <poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular
-            android:id="@+id/login_btn"
+            android:id="@+id/sign_up_button"
             android:layout_gravity="center"
             android:gravity="center"
-            android:layout_marginTop="40.2dp"
+            android:layout_marginTop="28.8dp"
+            android:layout_marginBottom="20.7dp"
             android:layout_marginLeft="28.7dp"
             android:layout_marginRight="28.9dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Log In"
+            android:text="Sign Up"
             android:background="@drawable/rect_blue"
             android:textColor="#fbfbfb"
             android:textSize="15.4sp"/>
-
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/sign_in_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="20dp"
-            app:srcCompat="@drawable/login" />
 
     </LinearLayout>
 
@@ -162,6 +216,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:gravity="center"
+        android:layout_marginBottom="20.7dp"
+
         android:orientation="horizontal">
 
 
@@ -171,17 +227,17 @@
             android:textColor="#606470"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New User?" />
+            android:text="Already a User?" />
 
         <poppinjay13.projects.android.customfonts.MyTextView_SF_Pro_Display_Medium
             android:layout_gravity="center"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="7dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15.4sp"
             android:textColor="#3277d8"
-            android:onClick="signUp"
-            android:text="Sign up for a new account" />
+            android:onClick="login"
+            android:text="Login now" />
 
     </LinearLayout>
 </RelativeLayout>

@@ -41,12 +41,12 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment__details);
         //on click
-        mpesa = (LinearLayout) findViewById(R.id.mpesa);
-        cards = (LinearLayout) findViewById(R.id.cards);
-        rightmark1 = (ImageView) findViewById(R.id.rightmark1);
-        rightmark2 = (ImageView) findViewById(R.id.rightmark2);
-        mpesa_details = (LinearLayout) findViewById(R.id.mpesa_details);
-        card_details = (LinearLayout) findViewById(R.id.card_details);
+        mpesa = findViewById(R.id.mpesa);
+        cards = findViewById(R.id.cards);
+        rightmark1 = findViewById(R.id.rightmark1);
+        rightmark2 = findViewById(R.id.rightmark2);
+        mpesa_details = findViewById(R.id.mpesa_details);
+        card_details = findViewById(R.id.card_details);
         card_details.setVisibility(View.GONE);
 
         mpesa.setOnClickListener(this);

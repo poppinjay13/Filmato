@@ -2,14 +2,14 @@ package poppinjay13.projects.android;
 
 import java.util.List;
 
-public class MovieItem {
+public class MoviePOJO {
 
     private int imageResource;
     private String title;
     private String description;
     private int rating;
 
-    public MovieItem(int imageResource, String title, String description, int rating) {
+    public MoviePOJO(int imageResource, String title, String description, int rating) {
         this.title = title;
         this.imageResource = imageResource;
         this.description = description;
@@ -49,9 +49,9 @@ public class MovieItem {
     }
 
     public static class MovieResult {
-        private List<MovieItem> results;
+        private List<MoviePOJO> results;
 
-        public List<MovieItem> getResults() {
+        public List<MoviePOJO> getResults() {
             return results;
         }
     }

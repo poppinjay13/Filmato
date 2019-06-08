@@ -25,14 +25,14 @@ public class MovieActivity extends AppCompatActivity {
 
         String description = "";
         int rating = 5;
-        List<MovieItem> modelClassList = new ArrayList<>();
-        modelClassList.add(new MovieItem(R.drawable.pic1,"Deadpool",description,rating));
-        modelClassList.add(new MovieItem(R.drawable.pic2,"Justice League",description,rating));
-        modelClassList.add(new MovieItem(R.drawable.pic3,"Pacific Rim Uprising",description,rating));
-        modelClassList.add(new MovieItem(R.drawable.pic4,"Aquaman",description,rating));
-        modelClassList.add(new MovieItem(R.drawable.pic5,"Mad Max Fury Road",description,rating));
-        modelClassList.add(new MovieItem(R.drawable.pic6,"Black Panther",description,rating));
-        modelClassList.add(new MovieItem(R.drawable.pic7,"Captain Marvel",description,rating));
+        List<MoviePOJO> modelClassList = new ArrayList<>();
+        modelClassList.add(new MoviePOJO(R.drawable.pic1,"Deadpool",description,rating));
+        modelClassList.add(new MoviePOJO(R.drawable.pic2,"Justice League",description,rating));
+        modelClassList.add(new MoviePOJO(R.drawable.pic3,"Pacific Rim Uprising",description,rating));
+        modelClassList.add(new MoviePOJO(R.drawable.pic4,"Aquaman",description,rating));
+        modelClassList.add(new MoviePOJO(R.drawable.pic5,"Mad Max Fury Road",description,rating));
+        modelClassList.add(new MoviePOJO(R.drawable.pic6,"Black Panther",description,rating));
+        modelClassList.add(new MoviePOJO(R.drawable.pic7,"Captain Marvel",description,rating));
 
         RecyclerView.Adapter adapter = new MovieAdapter(modelClassList);
         recyclerView.setAdapter(adapter);
