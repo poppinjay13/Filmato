@@ -23,7 +23,7 @@ class ScrollingToolbarBehavior extends CoordinatorLayout.Behavior<Toolbar> {
 
             int distanceToScroll = child.getHeight();
 
-            int bottomToolbarHeight = child.getHeight();//TODO replace this with bottom toolbar height.
+            int bottomToolbarHeight = child.getHeight();//TODO replace this with bottom toolbar_payment height.
 
             float ratio = dependency.getY() / (float) bottomToolbarHeight;
             child.setTranslationY(-distanceToScroll * ratio);

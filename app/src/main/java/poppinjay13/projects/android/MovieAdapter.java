@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import poppinjay13.projects.android.activity.BookingActivity;
+
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
 
@@ -65,7 +67,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 @Override
                 public void onClick(View v) {
                     Log.d("Clicked", "Movie Selection: " + titleText);
-                    Intent intent = new Intent(imageView.getContext(), MainActivity.class );
+                    Intent intent = new Intent(imageView.getContext(), BookingActivity.class );
                     intent.putExtra("Title", titleText);
                     imageView.getContext().startActivity(intent);
                 }
