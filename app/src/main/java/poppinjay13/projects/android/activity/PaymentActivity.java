@@ -32,8 +32,8 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
 
     //declare daraja as a global variable
     Daraja daraja;
-    String phonenumber;
-    String amount;
+    String phonenumber, amount, cinema, date, time;
+    int price;
     public static final String PREFS_NAME = "credentials";
     public static final String key = "phone_number";
 
@@ -56,11 +56,10 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
         //pay by mpesa set-up
         editphone = findViewById(R.id.editPhoneNumber);
         btnLipa = findViewById(R.id.btnLipa);
-
         final SharedPreferences creds = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         String number = creds.getString(key, "");
         String num_format = "2547";
-        if (number.isEmpty()) {
+        if (number == null) {
             editphone.setText(num_format);
         } else {
 
@@ -70,7 +69,14 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
 
         //retrieve amount to be charged
         Intent intent = getIntent();
-        int price = intent.getIntExtra("Amount", 0);
+        cinema = intent.getStringExtra("Cinema");
+        Log.d("Extra Cinema", cinema);
+        date = intent.getStringExtra("Date");
+        Log.d("Extra Date", date);
+        time = intent.getStringExtra("Time");
+        Log.d("Extra time", time);
+        price = intent.getIntExtra("Amount", 0);
+        Log.d("Extra amount", "" +price);
         amount = "" + price;
         Log.d("Price", amount);
         btnLipa.setOnClickListener(new View.OnClickListener() {

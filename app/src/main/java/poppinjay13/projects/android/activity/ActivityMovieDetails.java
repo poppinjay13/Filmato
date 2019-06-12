@@ -181,15 +181,6 @@ public class ActivityMovieDetails extends AppCompatActivity {
                         context
                 )
         );
-
-        /*production_companies_rv.setAdapter(
-                new ProductionCompaniesAdapter(
-                        movie.getProductionCompanies(),
-                        R.layout.list_item_pc,
-                        context
-                )
-        );*/
-
     }
 
     @Override
@@ -246,5 +237,7 @@ public class ActivityMovieDetails extends AppCompatActivity {
     }
 
     public void book(View view) {
+        Intent intent = new Intent(ActivityMovieDetails.this, BookingActivity.class);
+        startActivity(intent);
     }
 }

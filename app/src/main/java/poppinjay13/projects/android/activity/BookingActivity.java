@@ -29,6 +29,7 @@ public class BookingActivity extends Activity {
     GoogleSignInClient mGoogleSignInClient;
     ArrayList<String> seats = new ArrayList<String>();
     final int base_price = 800;
+    String cinema,date,time;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,8 +60,9 @@ public class BookingActivity extends Activity {
         cinema_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                Log.d("Spinner", "Cinema Selected:" +cinemas[position]);
+                Log.d("Spinner Cinema", "Cinema Selected:" +cinemas[position]);
                 //refresh with new cinema info
+                cinema = cinemas[position];
             }
 
             @Override
@@ -87,8 +89,9 @@ public class BookingActivity extends Activity {
         date_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                Log.d("Spinner", "Date Selected:" +dates[position]);
-                //refresh with new cinema info
+                Log.d("Spinner Date", "Date Selected:" +dates[position]);
+                //refresh with new date info
+                date = dates[position];
             }
 
             @Override
@@ -117,8 +120,9 @@ public class BookingActivity extends Activity {
         time_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                Log.d("Spinner", "Time Selected:" +times[position]);
-                //refresh with new cinema info
+                Log.d("Spinner Time", "Time Selected:" +times[position]);
+                //refresh with new time info
+                time = times[position];
             }
 
             @Override
@@ -151,6 +155,10 @@ public class BookingActivity extends Activity {
         int size = seats.size();
         int final_sum =  base_price*size;
         Intent intent = new Intent(BookingActivity.this, PaymentActivity.class);
+        intent.putExtra("Cinema", cinema);
+        intent.putExtra("Date", date);
+        intent.putExtra("Time", time);
+        intent.putExtra("Seats", seats);
         intent.putExtra("Amount", final_sum);
         startActivity(intent);
         finish();
@@ -172,7 +180,7 @@ public class BookingActivity extends Activity {
             iv.setTag(available);
             delete(name);
         } else {
-            Log.d("Seats", "This Should Really Not Happen");
+            Log.d("Seats Error", "This Should Really Not Happen");
         }
     }
 
