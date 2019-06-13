@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:layout_marginBottom="12dp"
     android:background="@color/white"
-    tools:context=".activity.LoginActivity">
+    tools:context=".Activity.LoginActivity">
 
 
     <LinearLayout
@@ -17,11 +17,11 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_marginTop="80.2dp"
+            android:layout_width="193dp"
+            android:layout_height="102dp"
             android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_right"/>
+            android:layout_marginTop="30dp"
+            android:src="@drawable/movie" />
 
         <poppinjay13.projects.android.customfonts.MyTextView_SF_Pro_Display_Medium
             android:layout_gravity="center"
@@ -44,9 +44,9 @@
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="123.1dp"
-            android:layout_marginLeft="28.7dp"
-            android:layout_marginRight="28.9dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             app:cardElevation="1dp"
             app:cardCornerRadius="6dp"
             app:cardBackgroundColor="@color/white">
@@ -60,19 +60,19 @@
                 android:padding="12dp">
 
                 <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
                     android:layout_marginTop="6dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/mail"/>
+                    android:src="@drawable/mail" />
 
                 <poppinjay13.projects.android.customfonts.EditText__SF_Pro_Display_Light
                     android:id="@+id/log_email"
-                    android:background="#00000000"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Email"
-                    android:textColorHint="#000000"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#00000000"
+                    android:hint="Email"
+                    android:textColorHint="#000000" />
 
 
             </LinearLayout>
@@ -102,19 +102,19 @@
                 android:padding="12dp">
 
                 <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
                     android:layout_marginTop="6dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/lock"/>
+                    android:src="@drawable/lock" />
 
                 <poppinjay13.projects.android.customfonts.EditText__SF_Pro_Display_Light
                     android:id="@+id/log_password"
-                    android:background="#00000000"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Password"
-                    android:textColorHint="#000000"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#00000000"
+                    android:hint="Password"
+                    android:textColorHint="#000000" />
 
 
             </LinearLayout>
@@ -135,17 +135,17 @@
 
         <poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular
             android:id="@+id/login_btn"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_marginTop="40.2dp"
-            android:layout_marginLeft="28.7dp"
-            android:layout_marginRight="28.9dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Log In"
+            android:layout_gravity="center"
+            android:layout_marginLeft="28.7dp"
+            android:layout_marginTop="40.2dp"
+            android:layout_marginRight="28.9dp"
             android:background="@drawable/rect_blue"
+            android:gravity="center"
+            android:text="Log In"
             android:textColor="#fbfbfb"
-            android:textSize="15.4sp"/>
+            android:textSize="15.4sp" />
 
         <com.google.android.gms.common.SignInButton
             android:id="@+id/sign_in_button"
