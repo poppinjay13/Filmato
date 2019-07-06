@@ -15,7 +15,7 @@
     <string name="pref_username">poppinjay13.projects.preference_username</string>
     <string name="pref_status">poppinjay13.projects.preference_login_status</string>
     <string name="title_activity_navigation">NavigationActivity</string>
-    <string name="title_home">Showroom</string>
+    <string name="title_home">Now Showing</string>
     <string name="title_dashboard">My Tickets</string>
     <string name="title_notifications">Notifications</string>
 

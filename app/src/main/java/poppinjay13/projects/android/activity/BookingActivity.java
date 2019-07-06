@@ -62,6 +62,7 @@ public class BookingActivity extends Activity {
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 Log.d("Spinner Cinema", "Cinema Selected:" +cinemas[position]);
                 //refresh with new cinema info
+                refreshSeats(cinemas,position);
                 cinema = cinemas[position];
             }
 
@@ -133,6 +134,12 @@ public class BookingActivity extends Activity {
         });
     }
 
+    private void refreshSeats(String[] cinemas, int position) {
+        //Intent intent = new Intent(BookingActivity.this, BookingActivity.class);
+        //startActivity(intent);
+        //cinema_spinner.setSelection(position);
+    }
+
     public void logout(View view) {
         Toast.makeText(getApplicationContext(), "Logging you out", Toast.LENGTH_SHORT).show();
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -169,14 +176,14 @@ public class BookingActivity extends Activity {
         int view_id = view.getId();
         ImageView iv=findViewById(view_id);
         String image = (String) iv.getTag();
-        String available = "R.drawable.ic_availabe_seat1";
+        String available = "R.drawable.ic_available_seat1";
         String selected = "R.drawable.ic_selected_seat1";
         if (image.equals(available)) {
             iv.setImageResource(R.drawable.ic_selected_seat1);
             iv.setTag(selected);
             add(name);
         } else if (image.equals(selected)) {
-            iv.setImageResource(R.drawable.ic_availabe_seat1);
+            iv.setImageResource(R.drawable.ic_available_seat1);
             iv.setTag(available);
             delete(name);
         } else {

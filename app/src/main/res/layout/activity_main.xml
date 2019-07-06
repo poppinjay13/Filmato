@@ -191,61 +191,67 @@
                 android:id="@+id/A1"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/A2"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/A3"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/A4"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/A5"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/A6"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
         </LinearLayout>
 
         <LinearLayout
@@ -259,81 +265,89 @@
                 android:id="@+id/B1"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/B2"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/B3"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/B4"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/B5"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/B6"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/B7"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/B8"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
 
         </LinearLayout>
@@ -349,92 +363,111 @@
                 android:id="@+id/C1"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/C2"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/C3"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/C4"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/ic_taken_seat1" />
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/C5"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/ic_taken_seat1" />
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/C6"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/ic_taken_seat1" />
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/C7"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/C8"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/C9"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/C10"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
 
         </LinearLayout>
@@ -450,92 +483,111 @@
                 android:id="@+id/D1"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/D2"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/D3"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/D4"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/D5"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/ic_taken_seat1" />
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/D6"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/ic_taken_seat1" />
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/D7"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/ic_taken_seat1" />
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/D8"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/D9"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/D10"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
 
         </LinearLayout>
@@ -552,95 +604,111 @@
                 android:id="@+id/E1"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/E2"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/E3"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/E4"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/E5"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/E6"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/ic_taken_seat1" />
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/E7"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/ic_taken_seat1" />
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/E8"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/E9"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/E10"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
 
         </LinearLayout>
@@ -656,89 +724,111 @@
                 android:id="@+id/F1"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/F2"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/F3"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/ic_taken_seat1" />
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/F4"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/ic_taken_seat1" />
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/F5"
                 android:layout_width="20dp"
                 android:layout_height="match_parent"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/F6"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/ic_taken_seat1" />
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/F7"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/ic_taken_seat1" />
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:onClick="select"
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/F8"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/F9"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/F10"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
 
         </LinearLayout>
@@ -755,101 +845,111 @@
                 android:id="@+id/G1"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/G2"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/G3"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/G4"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/G5"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/G6"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/G7"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/G8"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/G9"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/G10"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
 
         </LinearLayout>
@@ -865,81 +965,89 @@
                 android:id="@+id/H1"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/H2"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/H3"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/H4"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/H5"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/H6"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/H7"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
 
             <ImageView
                 android:id="@+id/H8"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                android:src="@drawable/ic_availabe_seat1"
-                android:tag="R.drawable.ic_availabe_seat1" />
+                app:srcCompat="@drawable/ic_available_seat1"
+                android:tag="R.drawable.ic_available_seat1"
+                android:focusable="true"/>
         </LinearLayout>
 
         <LinearLayout
@@ -960,7 +1068,7 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/ic_availabe_seat1" />
+                    app:srcCompat="@drawable/ic_available_seat1" />
 
                 <poppinjay13.projects.android.customfonts1.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
@@ -984,7 +1092,7 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/ic_taken_seat1" />
+                    app:srcCompat="@drawable/ic_taken_seat1" />
 
                 <poppinjay13.projects.android.customfonts1.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
@@ -1008,7 +1116,7 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/ic_selected_seat1" />
+                    app:srcCompat="@drawable/ic_selected_seat1" />
 
                 <poppinjay13.projects.android.customfonts1.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
@@ -1042,7 +1150,7 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="25dp"
-        android:background="@drawable/signin_rect"
+        android:background="@drawable/rect_blue"
         android:elevation="1dp"
         android:gravity="center"
         android:onClick="proceed"

@@ -66,8 +66,8 @@ public class ActivityMovieDetails extends AppCompatActivity {
         coordinatorLayout = findViewById(R.id.main_content);
         progressBar = findViewById(R.id.progressBar);
         img_movie = findViewById(R.id.image);
-        //tv_title = findViewById(R.id.title);
-        //tv_original_title = findViewById(R.id.original_title);
+        tv_title = findViewById(R.id.title);
+        tv_original_title = findViewById(R.id.original_title);
         webView = findViewById(R.id.desc);
         appBarLayout = findViewById(R.id.appbar);
         genres_recycler_view = findViewById(R.id.genres_recycler_view);
@@ -90,6 +90,7 @@ public class ActivityMovieDetails extends AppCompatActivity {
                 final MovieResponse movie = response.body();
 
                 title = movie.getTitle();
+                tv_original_title.setText(title);
                 overview = movie.getOverview();
                 if (actionBar != null) {
                     getSupportActionBar().setDisplayHomeAsUpEnabled(true);

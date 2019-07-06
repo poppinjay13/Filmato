@@ -12,6 +12,8 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.facebook.shimmer.ShimmerFrameLayout;
+
 import java.util.List;
 
 import poppinjay13.projects.android.Config;
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private Context context;
     private RecyclerView recyclerView = null;
     private List<MovieItem> movies;
+    private ShimmerFrameLayout mshimmerFrameLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Find views
         recyclerView = findViewById(R.id.recycler_view);
+        mshimmerFrameLayout = findViewById(R.id.shimmer_view_container);
 
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -68,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.e(TAG, call.request().toString());
                 movies = response.body().getResults();
                 recyclerView.setAdapter(new MoviesAdapter(movies, R.layout.list_item_movie, getApplicationContext()));
+                mshimmerFrameLayout.stopShimmer();
+                mshimmerFrameLayout.setVisibility(View.GONE);
             }
 
             @Override

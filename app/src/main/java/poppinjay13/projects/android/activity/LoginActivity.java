@@ -15,7 +15,7 @@ import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
-import poppinjay13.projects.android.MovieActivity;
+import poppinjay13.projects.android.NavigationActivity;
 import poppinjay13.projects.android.R;
 import poppinjay13.projects.android.customfonts.EditText__SF_Pro_Display_Light;
 import poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular;
@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Welcome Stranger", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                Intent intent = new Intent(LoginActivity.this, NavigationActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -93,7 +93,7 @@ public class LoginActivity extends AppCompatActivity {
             String personGivenName = account.getGivenName();
             // Signed in successfully, show toast and move on to the main activity.
             Toast.makeText(getApplicationContext(), "Welcome "+personGivenName, Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(LoginActivity.this, MovieActivity.class);
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intent);
             finish();
 
@@ -118,7 +118,7 @@ public class LoginActivity extends AppCompatActivity {
             String personEmail = acct.getEmail();
             String personId = acct.getId();
             Toast.makeText(getApplicationContext(), "Welcome "+personGivenName, Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(LoginActivity.this, MovieActivity.class);
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intent);
             finish();
         }
