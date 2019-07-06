@@ -8,7 +8,7 @@ import android.util.AttributeSet;
  * Created by praja on 17-May-17.
  */
 
-public class Button_Roboto_Medium extends android.support.v7.widget.AppCompatButton {
+public class Button_Roboto_Medium extends androidx.appcompat.widget.AppCompatButton {
 
     public Button_Roboto_Medium(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);

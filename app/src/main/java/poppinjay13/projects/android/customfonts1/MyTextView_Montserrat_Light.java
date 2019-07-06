@@ -8,7 +8,7 @@ import android.util.AttributeSet;
  * Created by wolfsoft1 on 31/1/18.
  */
 
-public class MyTextView_Montserrat_Light extends android.support.v7.widget.AppCompatTextView {
+public class MyTextView_Montserrat_Light extends androidx.appcompat.widget.AppCompatTextView {
     public MyTextView_Montserrat_Light(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init();

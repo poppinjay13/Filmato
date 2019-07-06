@@ -3,10 +3,9 @@ package poppinjay13.projects.android.customfonts;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
 
-public class MyTextView_Roboto_Bold extends android.support.v7.widget.AppCompatTextView {
+public class MyTextView_Roboto_Bold extends androidx.appcompat.widget.AppCompatTextView {
 
     public MyTextView_Roboto_Bold(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);

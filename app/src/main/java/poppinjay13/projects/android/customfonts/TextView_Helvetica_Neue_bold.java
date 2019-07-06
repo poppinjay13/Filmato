@@ -2,9 +2,8 @@ package poppinjay13.projects.android.customfonts;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
-public class TextView_Helvetica_Neue_bold extends android.support.v7.widget.AppCompatTextView {
+public class TextView_Helvetica_Neue_bold extends androidx.appcompat.widget.AppCompatTextView {
 
     public TextView_Helvetica_Neue_bold(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);

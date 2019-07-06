@@ -5,7 +5,7 @@ import android.graphics.Typeface;
 import android.util.AttributeSet;
 
 
-public class MyTextView_SF_Pro_Display_Light extends android.support.v7.widget.AppCompatTextView {
+public class MyTextView_SF_Pro_Display_Light extends androidx.appcompat.widget.AppCompatTextView {
 
     public MyTextView_SF_Pro_Display_Light(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);

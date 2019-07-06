@@ -2,10 +2,9 @@ package poppinjay13.projects.android.customfonts;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
 
-public class MyTextView_sfuitext_regular extends android.support.v7.widget.AppCompatTextView {
+public class MyTextView_sfuitext_regular extends androidx.appcompat.widget.AppCompatTextView {
 
     public MyTextView_sfuitext_regular(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
