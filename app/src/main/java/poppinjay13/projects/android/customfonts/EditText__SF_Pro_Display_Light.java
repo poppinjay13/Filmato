@@ -2,9 +2,8 @@ package poppinjay13.projects.android.customfonts;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.EditText;
 
-public class EditText__SF_Pro_Display_Light extends android.support.v7.widget.AppCompatEditText {
+public class EditText__SF_Pro_Display_Light extends androidx.appcompat.widget.AppCompatEditText {
 
     public EditText__SF_Pro_Display_Light(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);

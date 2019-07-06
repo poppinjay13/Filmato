@@ -3,9 +3,8 @@ package poppinjay13.projects.android.customfonts;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.EditText;
 
-public class EditText_Roboto_Meidum extends android.support.v7.widget.AppCompatEditText {
+public class EditText_Roboto_Meidum extends androidx.appcompat.widget.AppCompatEditText {
 
     public EditText_Roboto_Meidum(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);

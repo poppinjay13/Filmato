@@ -2,9 +2,8 @@ package poppinjay13.projects.android.customfonts;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
-public class HelveticaNeueCondObl extends android.support.v7.widget.AppCompatTextView {
+public class HelveticaNeueCondObl extends androidx.appcompat.widget.AppCompatTextView {
 
     public HelveticaNeueCondObl(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);

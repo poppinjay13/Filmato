@@ -1,7 +1,7 @@
 package poppinjay13.projects.android.adapter;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,11 +39,11 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
 
         public MovieViewHolder(View v) {
             super(v);
-            moviesLayout = (LinearLayout) v.findViewById(R.id.movies_layout);
-            movieImage = (ImageView) v.findViewById(R.id.movie_image);
-            movieTitle = (TextView) v.findViewById(R.id.title);
-            movieDescription = (TextView) v.findViewById(R.id.description);
-            rating = (TextView) v.findViewById(R.id.rating);
+            moviesLayout = v.findViewById(R.id.movies_layout);
+            movieImage = v.findViewById(R.id.movie_image);
+            movieTitle = v.findViewById(R.id.title);
+            movieDescription = v.findViewById(R.id.description);
+            rating = v.findViewById(R.id.rating);
         }
     }
 

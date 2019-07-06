@@ -13,7 +13,7 @@
         android:textSize="20sp"
         android:text="Movies Currently Showing"/>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/movies_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

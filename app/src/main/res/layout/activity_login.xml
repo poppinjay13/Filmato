@@ -41,7 +41,7 @@
             android:text="Login to continue using Filmato"/>
 
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
@@ -77,11 +77,11 @@
 
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="19.2dp"
@@ -119,7 +119,7 @@
 
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
         <poppinjay13.projects.android.customfonts.MyTextView_SF_Pro_Display_Light
