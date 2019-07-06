@@ -24,7 +24,7 @@ import retrofit2.Call;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG = MainActivity.class.getSimpleName();
+    private static final String TAG = "MainActivity";
 
     private Context context;
     private RecyclerView recyclerView = null;
