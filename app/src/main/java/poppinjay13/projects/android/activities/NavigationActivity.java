@@ -1,4 +1,4 @@
-package poppinjay13.projects.android;
+package poppinjay13.projects.android.activities;
 
 import android.os.Bundle;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -7,6 +7,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import poppinjay13.projects.android.R;
+import poppinjay13.projects.android.fragments.MovieFragment;
+import poppinjay13.projects.android.fragments.SettingsFragment;
+import poppinjay13.projects.android.fragments.TicketsFragment;
 
 public class NavigationActivity extends AppCompatActivity {
     private TextView mTextMessage;

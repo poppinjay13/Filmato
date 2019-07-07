@@ -1,10 +1,12 @@
-package poppinjay13.projects.android;
+package poppinjay13.projects.android.fragments;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import poppinjay13.projects.android.R;
 
 public class SettingsFragment extends Fragment {
 

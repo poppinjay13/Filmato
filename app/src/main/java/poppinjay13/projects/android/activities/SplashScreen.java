@@ -1,4 +1,4 @@
-package poppinjay13.projects.android.activity;
+package poppinjay13.projects.android.activities;
 
 import android.content.Intent;
 import android.os.Handler;

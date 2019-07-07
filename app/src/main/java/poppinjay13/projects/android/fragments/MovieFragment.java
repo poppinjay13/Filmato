@@ -1,4 +1,4 @@
-package poppinjay13.projects.android;
+package poppinjay13.projects.android.fragments;
 
 import android.content.Context;
 import android.content.Intent;
@@ -19,8 +19,10 @@ import com.facebook.shimmer.ShimmerFrameLayout;
 
 import java.util.List;
 
-import poppinjay13.projects.android.activity.ActivityMovieDetails;
-import poppinjay13.projects.android.adapter.MoviesAdapter;
+import poppinjay13.projects.android.Config;
+import poppinjay13.projects.android.R;
+import poppinjay13.projects.android.activities.ActivityMovieDetails;
+import poppinjay13.projects.android.adapters.MoviesAdapter;
 import poppinjay13.projects.android.model.movies.MovieItem;
 import poppinjay13.projects.android.model.movies.MoviesResponse;
 import poppinjay13.projects.android.rest.API;

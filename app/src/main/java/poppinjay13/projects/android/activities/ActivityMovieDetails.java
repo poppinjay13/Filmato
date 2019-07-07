@@ -1,4 +1,4 @@
-package poppinjay13.projects.android.activity;
+package poppinjay13.projects.android.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -31,7 +31,7 @@ import com.squareup.picasso.Picasso;
 
 import poppinjay13.projects.android.Config;
 import poppinjay13.projects.android.R;
-import poppinjay13.projects.android.adapter.GenresAdapter;
+import poppinjay13.projects.android.adapters.GenresAdapter;
 import poppinjay13.projects.android.model.movie.MovieResponse;
 import poppinjay13.projects.android.rest.API;
 import retrofit2.Call;

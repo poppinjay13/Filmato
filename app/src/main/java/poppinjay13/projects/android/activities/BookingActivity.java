@@ -1,4 +1,4 @@
-package poppinjay13.projects.android.activity;
+package poppinjay13.projects.android.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -41,7 +41,7 @@ public class BookingActivity extends Activity {
         TextView textView = findViewById(R.id.main_title);
         textView.setText(title);
 
-        //load cinema spinner in the activity
+        //load cinema spinner in the activities
         Spinner cinema_spinner = findViewById(R.id.spinner_movie);
         final String[] cinemas = {
                 "Anga Sky Cinema",

@@ -1,4 +1,4 @@
-package poppinjay13.projects.android.adapter;
+package poppinjay13.projects.android.adapters;
 
 import android.content.Context;
 import androidx.recyclerview.widget.RecyclerView;
