@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Filmato</string>
+    <string name="charges">Lipa Ksh 0.00</string>
+    <string name="movie_title">Jina la filamu</string>
+    <string name="movie_view">Tokeo ya maajabu</string>
+    <string name="no_prompt">Nambari (254en dash123en dash4567)</string>
+    <string name="prompt_email">Barua pepe</string>
+    <string name="prompt_password">Neno la kificho</string>
+    <string name="screen">Skrini ni kwa upande huu</string>
+    <string name="seats_selected">Hamna kiti lililo chaguliwa</string>
+    <string name="spinner_icon">spinner icon</string>
+    <string name="title_activity_login">Sahihisha</string>
+    <string name="title_activity_navigation">Mlinzi wa Activity</string>
+    <string name="title_dashboard">Matiketi yangu</string>
+    <string name="title_home">Yanayo onyeshwa saa hii</string>
+    <string name="title_notifications">Habari Mpya</string>
+    <string name="pref_file">poppinjay13.projects.preference_file</string>
+    <string name="pref_status">poppinjay13.projects.preference_login_status</string>
+    <string name="pref_username">poppinjay13.projects.preference_username</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -3,7 +3,6 @@
     <string name="title_activity_login">Sign in</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
-    <string name="action_sign_in_short">Sign in</string>
     <string name="movie_view">Oops</string>
     <string name="movie_title">Movie Title</string>
     <string name="spinner_icon">spinner icon</string>
