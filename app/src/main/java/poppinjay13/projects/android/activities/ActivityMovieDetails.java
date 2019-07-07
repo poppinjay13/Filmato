@@ -50,7 +50,6 @@ public class ActivityMovieDetails extends AppCompatActivity {
     private ProgressBar progressBar;
     private CoordinatorLayout coordinatorLayout;
     private RecyclerView genres_recycler_view;
-    private RecyclerView production_companies_rv;
     private AppBarLayout appBarLayout;
     private String title, overview;
 
@@ -93,7 +92,6 @@ public class ActivityMovieDetails extends AppCompatActivity {
                 tv_original_title.setText(title);
                 overview = movie.getOverview();
                 if (actionBar != null) {
-                    getSupportActionBar().setDisplayHomeAsUpEnabled(true);
                     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
                     getSupportActionBar().setTitle(title);
                 }
@@ -186,28 +184,15 @@ public class ActivityMovieDetails extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        //getMenuInflater().inflate(R.menu.menu_movie_details, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem menuItem) {
-        switch (menuItem.getItemId()) {
-            case android.R.id.home:
-                onBackPressed();
-                break;
-            //case R.id.menu_share:
-                //String formattedString = android.text.Html.fromHtml(overview).toString();
-                //Intent share = new Intent();
-                //share.setAction(Intent.ACTION_SEND);
-                //share.putExtra(Intent.EXTRA_TITLE, title);
-                //share.putExtra(Intent.EXTRA_PACKAGE_NAME, getPackageName());
-                //share.putExtra(Intent.EXTRA_TEXT, formattedString);
-                //share.setType("text/plain");
-                //startActivity(share);
-                //break;
-            default:
-                return super.onOptionsItemSelected(menuItem);
+        if (menuItem.getItemId() == android.R.id.home) {
+            onBackPressed();
+        } else {
+            return super.onOptionsItemSelected(menuItem);
         }
         return true;
     }
@@ -239,6 +224,7 @@ public class ActivityMovieDetails extends AppCompatActivity {
 
     public void book(View view) {
         Intent intent = new Intent(ActivityMovieDetails.this, BookingActivity.class);
+        intent.putExtra("Title",title);
         startActivity(intent);
     }
 }
