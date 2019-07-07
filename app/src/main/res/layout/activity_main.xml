@@ -194,7 +194,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -205,7 +205,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -216,7 +216,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -227,7 +227,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -238,7 +238,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -249,7 +249,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
         </LinearLayout>
@@ -268,7 +268,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -279,7 +279,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -290,7 +290,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -301,7 +301,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -312,7 +312,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -323,7 +323,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -334,7 +334,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -345,7 +345,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -366,7 +366,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -377,7 +377,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -388,7 +388,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -399,7 +399,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -410,7 +410,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -421,7 +421,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -432,7 +432,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -443,7 +443,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -454,7 +454,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -465,7 +465,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -486,7 +486,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -497,7 +497,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -508,7 +508,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -519,7 +519,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -530,7 +530,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -541,7 +541,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -552,7 +552,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -563,7 +563,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -574,7 +574,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -585,7 +585,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -607,7 +607,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -618,7 +618,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -629,7 +629,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -640,7 +640,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -651,7 +651,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -662,7 +662,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -673,7 +673,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -684,7 +684,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -695,7 +695,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -706,7 +706,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -727,7 +727,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -738,7 +738,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -749,7 +749,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -760,7 +760,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -771,7 +771,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -782,7 +782,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -793,7 +793,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -804,7 +804,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -815,7 +815,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -826,7 +826,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -848,7 +848,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -859,7 +859,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -870,7 +870,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -881,7 +881,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -892,7 +892,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -903,7 +903,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -914,7 +914,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true" />
 
@@ -925,7 +925,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -936,7 +936,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -947,7 +947,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -968,7 +968,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -979,7 +979,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -990,7 +990,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -1001,7 +1001,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -1012,7 +1012,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -1023,7 +1023,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -1034,7 +1034,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
 
@@ -1045,7 +1045,7 @@
                 android:layout_marginEnd="10dp"
                 android:clickable="true"
                 android:onClick="select"
-                app:srcCompat="@drawable/ic_available_seat1"
+                android:src="@drawable/ic_available_seat1"
                 android:tag="R.drawable.ic_available_seat1"
                 android:focusable="true"/>
         </LinearLayout>
@@ -1068,7 +1068,7 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    app:srcCompat="@drawable/ic_available_seat1" />
+                    android:src="@drawable/ic_available_seat1" />
 
                 <poppinjay13.projects.android.customfonts1.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
@@ -1092,7 +1092,7 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    app:srcCompat="@drawable/ic_taken_seat1" />
+                    android:src="@drawable/ic_taken_seat1" />
 
                 <poppinjay13.projects.android.customfonts1.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
@@ -1116,7 +1116,7 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    app:srcCompat="@drawable/ic_selected_seat1" />
+                    android:src="@drawable/ic_selected_seat1" />
 
                 <poppinjay13.projects.android.customfonts1.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
