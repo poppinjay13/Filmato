@@ -36,9 +36,30 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="USED"
+                android:text="PREVIOUS"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/no_tickets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NO TICKETS HERE"
+                android:gravity="center"
+                android:padding="50dp"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Purchase some tickets to view them"
+                android:gravity="center"
+                android:padding="50dp"/>
         </LinearLayout>
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
@@ -49,7 +70,8 @@
         <com.facebook.shimmer.ShimmerFrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:shimmer_auto_start="false">
+            app:shimmer_auto_start="false"
+            android:visibility="gone">
 
         <include layout="@layout/list_item_ticket"/>
 

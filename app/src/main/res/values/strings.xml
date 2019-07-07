@@ -13,6 +13,7 @@
     <string name="no_prompt">PHONE NUMBER (254123456789)</string>
     <string name="pref_file">poppinjay13.projects.preference_file</string>
     <string name="pref_username">poppinjay13.projects.preference_username</string>
+    <string name="pref_email">poppinjay13.projects.preference_email</string>
     <string name="pref_status">poppinjay13.projects.preference_login_status</string>
     <string name="title_activity_navigation">NavigationActivity</string>
     <string name="title_home">Now Showing</string>

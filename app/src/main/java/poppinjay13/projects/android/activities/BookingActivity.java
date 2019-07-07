@@ -76,13 +76,13 @@ public class BookingActivity extends Activity {
         //load date spinner
         Spinner date_spinner = findViewById(R.id.spinner_date);
         final String[] dates = {
-                "Sunday, 20",
-                "Monday, 21",
-                "Tuesday, 22",
-                "Wednesday, 23",
-                "Thursday, 24",
-                "Friday, 25",
-                "Saturday, 26"
+                "8-7-2019",
+                "9-7-2019",
+                "10-7-2019",
+                "11-7-2019",
+                "12-7-2019",
+                "13-7-2019",
+                "14-7-2019"
         };
         ArrayAdapter<CharSequence> dateAdapter = new ArrayAdapter<CharSequence>(BookingActivity.this, R.layout.spinner_text, dates );
         dateAdapter.setDropDownViewResource(R.layout.simple_spinner_dropdown);

@@ -11,6 +11,7 @@ public class PrefConfig {
     private Context context;
 
     public void prefConfig(Context context){
+        this.context = context;
         sharedPreferences = context.getSharedPreferences(context.getString(R.string.pref_file),Context.MODE_PRIVATE);
     }
 
@@ -33,6 +34,16 @@ public class PrefConfig {
     public String readName(){
         return sharedPreferences.getString(context.getString(R.string.pref_username),"User");
     }
+    public void writeEmail(String email){
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(context.getString(R.string.pref_email),email);
+        editor.apply();
+    }
+
+        public String readEmail(){
+        return sharedPreferences.getString(context.getString(R.string.pref_email),"Email");
+    }
+
 
     public void displayToast(String message){
         Toast.makeText(context,message,Toast.LENGTH_SHORT).show();

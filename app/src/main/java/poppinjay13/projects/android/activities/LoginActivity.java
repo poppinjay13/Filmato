@@ -1,6 +1,7 @@
 package poppinjay13.projects.android.activities;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -22,6 +23,7 @@ import poppinjay13.projects.android.customfonts.EditText__SF_Pro_Display_Light;
 import poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular;
 import poppinjay13.projects.android.model.Result;
 import poppinjay13.projects.android.model.User;
+import poppinjay13.projects.android.model.configuration.PrefConfig;
 import poppinjay13.projects.android.rest.ApiInterface;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -30,11 +32,13 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class LoginActivity extends AppCompatActivity {
- 
+
+    PrefConfig prefConfig = new PrefConfig();
     GoogleSignInClient mGoogleSignInClient;
     private static final int RC_SIGN_IN = 9001;
     EditText__SF_Pro_Display_Light memail, mpassword;
     MyTextView_Roboto_Regular login_btn;
+    Context context = this;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,14 +50,17 @@ public class LoginActivity extends AppCompatActivity {
         login_btn = findViewById(R.id.login_btn);
         initGoogleSignIn();
 
+        prefConfig.prefConfig(context);
+        if(prefConfig.readLoginStatus()){
+            Toast.makeText(getApplicationContext(), "Welcome "+prefConfig.readName(), Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(LoginActivity.this, NavigationActivity.class);
+            startActivity(intent);
+        }
+
         login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 login();
-                //Toast.makeText(getApplicationContext(), "Welcome Stranger", Toast.LENGTH_SHORT).show();
-               // Intent intent = new Intent(LoginActivity.this, NavigationActivity.class);
-                //startActivity(intent);
-                //finish();
             }
         });
     }
@@ -68,7 +75,7 @@ public class LoginActivity extends AppCompatActivity {
             //getting the user values
 
             String email = memail.getText().toString().trim();
-            String password = mpassword.getText().toString().trim();
+            final String password = mpassword.getText().toString().trim();
 
 
             //building retrofit object
@@ -97,9 +104,18 @@ public class LoginActivity extends AppCompatActivity {
                     progressDialog.dismiss();
 
                     //displaying the message from the response as toast
-                    Toast.makeText(getApplicationContext(), (CharSequence) response.body(), Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(LoginActivity.this, NavigationActivity.class);
-                    startActivity(intent);
+                    if(response.body() != null){
+                        //response.body().getUser().getName()
+                        Toast.makeText(getApplicationContext(), "Welcome "+response.body().getUser().getName(), Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(LoginActivity.this, NavigationActivity.class);
+                        startActivity(intent);
+
+                        prefConfig.writeName(response.body().getUser().getName());
+                        prefConfig.writeEmail(response.body().getUser().getEmail());
+                        prefConfig.writeLoginStatus(true);
+                    }else{
+                        Toast.makeText(getApplicationContext(), "The email or password entered was incorrect", Toast.LENGTH_LONG).show();
+                    }
                 }
 
                 @Override

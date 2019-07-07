@@ -93,45 +93,6 @@
                 app:cardCornerRadius="6dp"
                 app:cardBackgroundColor="@color/white">
 
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:background="@drawable/rect"
-                    android:padding="12dp">
-
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="6dp"
-                        android:src="@drawable/phone" />
-
-                    <poppinjay13.projects.android.customfonts.EditText__SF_Pro_Display_Light
-                        android:id="@+id/phone"
-                        android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:layout_marginLeft="10dp"
-                        android:background="#00000000"
-                        android:hint="Phone Number"
-                        android:inputType="phone"
-                        android:textColorHint="#000000" />
-
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="19.2dp"
-                android:layout_marginLeft="28.7dp"
-                android:layout_marginRight="28.9dp"
-                app:cardElevation="1dp"
-                app:cardCornerRadius="6dp"
-                app:cardBackgroundColor="@color/white">
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

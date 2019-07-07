@@ -8,14 +8,14 @@ import retrofit2.http.POST;
 
 public interface ApiInterface {
     @FormUrlEncoded
-    @POST("register")
+    @POST("/register")
     Call<Result> createUser(
             @Field("name") String name,
             @Field("email") String email,
             @Field("password") String password);
 
     @FormUrlEncoded
-    @POST("register")
+    @POST("/login")
     Call<Result> loginUser(
             @Field("email") String email,
             @Field("password") String password);

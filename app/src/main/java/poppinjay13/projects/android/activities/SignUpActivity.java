@@ -1,6 +1,7 @@
 package poppinjay13.projects.android.activities;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +17,7 @@ import poppinjay13.projects.android.customfonts.EditText__SF_Pro_Display_Light;
 import poppinjay13.projects.android.customfonts.MyTextView_Roboto_Regular;
 import poppinjay13.projects.android.model.Result;
 import poppinjay13.projects.android.model.User;
+import poppinjay13.projects.android.model.configuration.PrefConfig;
 import poppinjay13.projects.android.rest.ApiInterface;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -27,6 +29,8 @@ public class SignUpActivity extends AppCompatActivity {
     EditText__SF_Pro_Display_Light mname, memail, mpassword;
     MyTextView_Roboto_Regular sign_up;
     GoogleSignInClient mGoogleSignInClient;
+    PrefConfig prefConfig = new PrefConfig();
+    Context context = this;
     private static final int RC_SIGN_IN = 9001;
 
     @Override
@@ -57,8 +61,8 @@ public class SignUpActivity extends AppCompatActivity {
 
         //getting the user values
 
-        String name = mname.getText().toString().trim();
-        String email = memail.getText().toString().trim();
+        final String name = mname.getText().toString().trim();
+        final String email = memail.getText().toString().trim();
         String password = mpassword.getText().toString().trim();
 
 
@@ -72,7 +76,7 @@ public class SignUpActivity extends AppCompatActivity {
         ApiInterface service = retrofit.create(ApiInterface.class);
 
         //Defining the user object as we need to pass it with the call
-        User user = new User(name, email, password);
+        final User user = new User(name, email, password);
 
         //defining the call
         Call<Result> call = service.createUser(
@@ -92,6 +96,10 @@ public class SignUpActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), response.body().getMessage(), Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(SignUpActivity.this, NavigationActivity.class);
                 startActivity(intent);
+
+                prefConfig.writeName(name);
+                prefConfig.writeEmail(email);
+                prefConfig.writeLoginStatus(true);
             }
 
             @Override

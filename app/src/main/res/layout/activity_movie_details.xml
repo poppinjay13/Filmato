@@ -84,7 +84,7 @@
                             android:layout_marginEnd="8dp"
                             android:layout_marginTop="0dp"
                             android:textColor="@color/text_color"
-                            android:textSize="13sp"
+                            android:textSize="20sp"
                             android:textStyle="bold"/>
 
                         <androidx.recyclerview.widget.RecyclerView
@@ -92,6 +92,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="5dp"
+                            android:layout_marginBottom="0dp"
                             android:clipChildren="false"
                             android:clipToPadding="false"
                             android:scrollbars="vertical" />
@@ -102,7 +103,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="0dp"
-                            android:layout_marginStart="8dp"
+                            android:layout_marginStart="0dp"
                             android:layout_marginEnd="8dp"
                             android:layout_marginTop="0dp"
                             android:textColor="@color/text_color"

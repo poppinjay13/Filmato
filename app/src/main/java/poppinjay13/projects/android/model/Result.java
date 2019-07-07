@@ -3,8 +3,8 @@ package poppinjay13.projects.android.model;
 import com.google.gson.annotations.SerializedName;
 
 public class Result {
-    @SerializedName("error")
-    private Boolean error;
+    @SerializedName("status")
+    private Boolean status;
 
     @SerializedName("message")
     private String message;
@@ -12,14 +12,19 @@ public class Result {
     @SerializedName("user")
     private User user;
 
-    public Result(Boolean error, String message, User user) {
-        this.error = error;
+    public Result(Boolean status, String message, User user) {
+        this.status = status;
         this.message = message;
         this.user = user;
     }
 
-    public Boolean getError() {
-        return error;
+    public Result(Boolean status, String message){
+        this.status = status;
+        this.message = message;
+    }
+
+    public Boolean getStatus() {
+        return status;
     }
 
     public String getMessage() {

@@ -10,10 +10,12 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
 
@@ -37,6 +39,7 @@ public class MovieFragment extends Fragment {
     private RecyclerView recyclerView = null;
     private List<MovieItem> movies;
     private ShimmerFrameLayout mshimmerFrameLayout;
+    private SwipeRefreshLayout swiper;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -46,15 +49,30 @@ public class MovieFragment extends Fragment {
         //Find views
         recyclerView = view.findViewById(R.id.recycler_view);
         mshimmerFrameLayout = view.findViewById(R.id.shimmer_view_container);
-
+        swiper = view.findViewById(R.id.swipe);
         context = getContext();
 
+        //setting an setOnRefreshListener on the SwipeDownLayout
+        swiper.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                mshimmerFrameLayout.startShimmer();
+                loadMovies();
+                swiper.setRefreshing(false);
+            }
+        });
+        loadMovies();
+        return view;
+    }
+
+    private void loadMovies() {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
         recyclerView.addOnItemTouchListener(new MovieFragment.RecyclerTouchListener(context, recyclerView, new MovieFragment.ClickListener() {
             @Override
             public void onClick(View view, final int position) {
 
+                Toast.makeText(getActivity(), "Opening Movie ... ", Toast.LENGTH_SHORT).show();
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -68,6 +86,7 @@ public class MovieFragment extends Fragment {
 
             @Override
             public void onLongClick(View view, int position) {
+                Toast.makeText(getActivity(), "Movie: "+movies.get(position).getTitle(), Toast.LENGTH_SHORT).show();
 
             }
         }));
@@ -85,9 +104,9 @@ public class MovieFragment extends Fragment {
             @Override
             public void onFailure(Call<MoviesResponse> call, Throwable throwable) {
                 Log.e(TAG, throwable.toString());
+                Toast.makeText(getActivity(), "Please check your internet connection and reload", Toast.LENGTH_SHORT).show();
             }
         });
-        return view;
     }
 
     @Override
