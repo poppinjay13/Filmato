@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
@@ -29,7 +30,7 @@ public class BookingActivity extends Activity {
     GoogleSignInClient mGoogleSignInClient;
     ArrayList<String> seats = new ArrayList<String>();
     final int base_price = 800;
-    String cinema,date,time;
+    String cinema,date,time,movie;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +41,7 @@ public class BookingActivity extends Activity {
         String title = intent.getStringExtra("Title");
         TextView textView = findViewById(R.id.main_title);
         textView.setText(title);
+        movie = title;
 
         //load cinema spinner in the activities
         Spinner cinema_spinner = findViewById(R.id.spinner_movie);
@@ -161,14 +163,39 @@ public class BookingActivity extends Activity {
     public void proceed(View view) {
         int size = seats.size();
         int final_sum =  base_price*size;
-        Intent intent = new Intent(BookingActivity.this, PaymentActivity.class);
-        intent.putExtra("Cinema", cinema);
-        intent.putExtra("Date", date);
-        intent.putExtra("Time", time);
-        intent.putExtra("Seats", seats);
-        intent.putExtra("Amount", final_sum);
-        startActivity(intent);
-        finish();
+        if(size == 0){
+            Toast.makeText(BookingActivity.this, "No seats have been selected", Toast.LENGTH_SHORT).show();
+        }else {
+            Intent intent = new Intent(BookingActivity.this, PaymentActivity.class);
+            intent.putExtra("Movie", movie);
+            intent.putExtra("Cinema", cinema);
+            intent.putExtra("Date", date);
+            intent.putExtra("Time", time);
+            intent.putExtra("Seats", seats);
+            intent.putExtra("Amount", final_sum);
+            intent.putExtra("Seats",seats);
+            startActivity(intent);
+            finish();
+        }
+    }
+
+    private static ArrayList<View> getViewsByTag(ViewGroup root, String tag){
+        ArrayList<View> views = new ArrayList<View>();
+        final int childCount = root.getChildCount();
+        for (int i = 0; i < childCount; i++) {
+            final View child = root.getChildAt(i);
+            if (child instanceof ViewGroup) {
+                views.addAll(getViewsByTag((ViewGroup) child, tag));
+            }
+
+            final Object tagObj = child.getTag();
+            if (tagObj != null && tagObj.equals(tag)) {
+                views.add(child);
+                //child.setBackgroundResource(R.id.ic_taken_seat);
+            }
+
+        }
+        return views;
     }
 
     public void select(View view) {

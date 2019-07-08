@@ -93,13 +93,18 @@ public class SignUpActivity extends AppCompatActivity {
                 progressDialog.dismiss();
 
                 //displaying the message from the response as toast
-                Toast.makeText(getApplicationContext(), response.body().getMessage(), Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(SignUpActivity.this, NavigationActivity.class);
-                startActivity(intent);
+                if(response.body() == null){
+                    Toast.makeText(getApplicationContext(), "The Server appears to be offline. Please try again later", Toast.LENGTH_LONG).show();
+                }else {
+                    Toast.makeText(getApplicationContext(), response.body().getMessage(), Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(SignUpActivity.this, NavigationActivity.class);
+                    startActivity(intent);
 
-                prefConfig.writeName(name);
-                prefConfig.writeEmail(email);
-                prefConfig.writeLoginStatus(true);
+                    prefConfig.prefConfig(context);
+                    prefConfig.writeName(name);
+                    prefConfig.writeEmail(email);
+                    prefConfig.writeLoginStatus(true);
+                }
             }
 
             @Override

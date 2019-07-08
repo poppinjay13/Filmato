@@ -30,7 +30,7 @@
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Welcome Aboard!"
+                android:text="@string/welcome_aboard"
                 android:textColor="#323643"
                 android:textSize="21.3sp"/>
             <poppinjay13.projects.android.customfonts.MyTextView_SF_Pro_Display_Light
@@ -40,15 +40,15 @@
                 android:layout_height="wrap_content"
                 android:textSize="15.4sp"
                 android:textColor="#606470"
-                android:text="Sign-up with us in a few simple steps"/>
+                android:text="@string/sign_up_with_us_in_a_few_simple_steps"/>
 
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="34.1dp"
-                android:layout_marginLeft="28.7dp"
-                android:layout_marginRight="28.9dp"
+                android:layout_marginStart="28.7dp"
+                android:layout_marginEnd="28.9dp"
                 app:cardElevation="1dp"
                 app:cardCornerRadius="6dp"
                 app:cardBackgroundColor="@color/white">
@@ -72,9 +72,9 @@
                         android:id="@+id/name"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:background="#00000000"
-                        android:hint="Name"
+                        android:hint="@string/name"
                         android:inputType="textPersonName"
                         android:textColorHint="#000000" />
 
@@ -87,8 +87,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="19.2dp"
-                android:layout_marginLeft="28.7dp"
-                android:layout_marginRight="28.9dp"
+                android:layout_marginStart="28.7dp"
+                android:layout_marginEnd="28.9dp"
                 app:cardElevation="1dp"
                 app:cardCornerRadius="6dp"
                 app:cardBackgroundColor="@color/white">
@@ -110,10 +110,10 @@
                         android:id="@+id/email"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:background="#00000000"
                         android:inputType="textEmailAddress"
-                        android:hint="Email"
+                        android:hint="@string/prompt_email"
                         android:textColorHint="#000000" />
 
 
@@ -125,8 +125,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="19.2dp"
-                android:layout_marginLeft="28.7dp"
-                android:layout_marginRight="28.9dp"
+                android:layout_marginStart="28.7dp"
+                android:layout_marginEnd="28.9dp"
                 app:cardElevation="1dp"
                 app:cardCornerRadius="6dp"
                 app:cardBackgroundColor="@color/white">
@@ -150,9 +150,9 @@
                         android:id="@+id/password_signup"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:background="#00000000"
-                        android:hint="Password"
+                        android:hint="@string/prompt_password"
                         android:inputType="textPassword"
                         android:textColorHint="#000000" />
 
@@ -168,11 +168,11 @@
                 android:gravity="center"
                 android:layout_marginTop="28.8dp"
                 android:layout_marginBottom="20.7dp"
-                android:layout_marginLeft="28.7dp"
-                android:layout_marginRight="28.9dp"
+                android:layout_marginStart="28.7dp"
+                android:layout_marginEnd="28.9dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sign Up"
+                android:text="@string/sign_up"
                 android:background="@drawable/rect_blue"
                 android:textColor="#fbfbfb"
                 android:textSize="15.4sp"/>
@@ -183,7 +183,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:gravity="center"
             android:layout_marginBottom="20.7dp"
 
@@ -196,17 +195,17 @@
                 android:textColor="#606470"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Already a User?" />
+                android:text="@string/already_a_user" />
 
             <poppinjay13.projects.android.customfonts.MyTextView_SF_Pro_Display_Medium
                 android:layout_gravity="center"
-                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15.4sp"
                 android:textColor="#3277d8"
                 android:onClick="login"
-                android:text="Login now" />
+                android:text="@string/login_now" />
 
         </LinearLayout>
     </LinearLayout>

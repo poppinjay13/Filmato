@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Filmato</string>
+    <string name="app_name" translatable="false">Filmato</string>
     <string name="title_activity_login">Sign in</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -11,15 +11,54 @@
     <string name="seats_selected">No seats selected</string>
     <string name="charges">Pay Ksh 0.00</string>
     <string name="no_prompt">PHONE NUMBER (254123456789)</string>
-    <string name="pref_file">poppinjay13.projects.preference_file</string>
     <string name="pref_username">poppinjay13.projects.preference_username</string>
     <string name="pref_email">poppinjay13.projects.preference_email</string>
     <string name="pref_status">poppinjay13.projects.preference_login_status</string>
-    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="title_activity_navigation" translatable="false">NavigationActivity</string>
     <string name="title_home">Now Showing</string>
     <string name="title_dashboard">My Tickets</string>
-    <string name="title_notifications">Notifications</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_profile">My Profile</string>
+    <string name="user_s_email">User\'s Email</string>
+    <string name="user_s_name">User\'s Name</string>
+    <string name="email_address">Email Address:</string>
+    <string name="names">Full Name:</string>
+    <string name="logout">LOGOUT</string>
+    <string name="ticket_no">TICKET_NO</string>
+    <string name="movie">MOVIE:</string>
+    <string name="cinema">CINEMA:</string>
+    <string name="date">DATE:</string>
+    <string name="time">TIME:</string>
+    <string name="seats">SEATS:</string>
+    <string name="movie_name">MOVIE_NAME</string>
+    <string name="cinema_name">CINEMA_NAME</string>
+    <string name="timestamp">TIMESTAMP</string>
+    <string name="datestamp">DATESTAMP</string>
+    <string name="seats_booked">SEATS BOOKED</string>
+    <string name="my_tickets">MY TICKETS</string>
+    <string name="valid">VALID</string>
+    <string name="previous">PREVIOUS</string>
+    <string name="no_tickets_here">NO TICKETS HERE</string>
+    <string name="purchase_some_tickets_to_view_them">Purchase some tickets to view them</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="login_to_continue_using_filmato">Login to continue using Filmato</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="log_in">Log In</string>
+    <string name="new_user">New User?</string>
+    <string name="sign_up_for_a_new_account">Sign up for a new account</string>
+    <string name="movie_time">MOVIE_TIME</string>
+    <string name="movie_date">MOVIE_DATE</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="currently_showing">CURRENTLY SHOWING</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="book_a_seat_for_this_movie">BOOK A SEAT FOR THIS MOVIE</string>
+    <string name="welcome_aboard">Welcome Aboard!</string>
+    <string name="sign_up_with_us_in_a_few_simple_steps">Sign-up with us in a few simple steps</string>
+    <string name="name">Name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_a_user">Already a User?</string>
+    <string name="login_now">Login now</string>
+    <string name="rating" translatable="false">Rating</string>
+    <string name="movie_description">Movie Description</string>
+    <string name="my_profile">MY PROFILE</string>
+    <string name="pref_file">poppinjay13.projects.preference_file</string>
 </resources>

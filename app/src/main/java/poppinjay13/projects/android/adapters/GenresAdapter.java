@@ -30,7 +30,7 @@ public class GenresAdapter extends RecyclerView.Adapter<GenresAdapter.GenreViewH
         TextView genreName;
         public GenreViewHolder(View v) {
             super(v);
-            genreName = (TextView) v.findViewById(R.id.genreName);
+            genreName = v.findViewById(R.id.genreName);
         }
     }
 

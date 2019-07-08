@@ -5,7 +5,7 @@ import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import poppinjay13.projects.android.model.movies.MovieItem;
+import poppinjay13.projects.android.model.movies.TicketItem;
 
 public class SearchMovieResponse {
 
@@ -20,7 +20,7 @@ public class SearchMovieResponse {
     private Integer totalPages;
     @SerializedName("results")
     @Expose
-    private List<MovieItem> results = null;
+    private List<TicketItem> results = null;
 
     public Integer getPage() {
         return page;
@@ -46,11 +46,11 @@ public class SearchMovieResponse {
         this.totalPages = totalPages;
     }
 
-    public List<MovieItem> getResults() {
+    public List<TicketItem> getResults() {
         return results;
     }
 
-    public void setResults(List<MovieItem> results) {
+    public void setResults(List<TicketItem> results) {
         this.results = results;
     }
 

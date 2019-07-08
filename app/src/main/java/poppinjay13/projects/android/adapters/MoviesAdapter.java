@@ -12,17 +12,17 @@ import android.widget.TextView;
 import java.util.List;
 
 import poppinjay13.projects.android.R;
-import poppinjay13.projects.android.model.movies.MovieItem;
+import poppinjay13.projects.android.model.movies.TicketItem;
 import com.squareup.picasso.Picasso;
 
 public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewHolder> {
 
-    private List<MovieItem> movies;
+    private List<TicketItem> movies;
     private int rowLayout;
     private Context context;
     public static final String IMAGE_URL_BASE_PATH="http://image.tmdb.org/t/p/w342//";
 
-    public MoviesAdapter(List<MovieItem> movies, int rowLayout, Context context) {
+    public MoviesAdapter(List<TicketItem> movies, int rowLayout, Context context) {
         this.movies = movies;
         this.rowLayout = rowLayout;
         this.context = context;

@@ -30,7 +30,7 @@
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Welcome Back!"
+                android:text="@string/welcome_back"
                 android:textColor="#323643"
                 android:textSize="21.3sp"/>
 
@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="15.4sp"
                 android:textColor="#606470"
-                android:text="Login to continue using Filmato"/>
+                android:text="@string/login_to_continue_using_filmato"/>
 
 
             <androidx.cardview.widget.CardView
@@ -72,9 +72,9 @@
                         android:id="@+id/log_email"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:background="#00000000"
-                        android:hint="Email"
+                        android:hint="@string/prompt_email"
                         android:inputType="textEmailAddress"
                         android:textColorHint="#000000" />
 
@@ -117,7 +117,7 @@
                         android:layout_height="45dp"
                         android:layout_marginStart="10dp"
                         android:background="#00000000"
-                        android:hint="Password"
+                        android:hint="@string/prompt_password"
                         android:inputType="textPassword"
                         android:textColorHint="#000000" />
 
@@ -130,10 +130,10 @@
             <poppinjay13.projects.android.customfonts.MyTextView_SF_Pro_Display_Light
                 android:layout_gravity="right"
                 android:layout_marginTop="19.2dp"
-                android:layout_marginRight="28.9dp"
+                android:layout_marginEnd="28.9dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Forgot password?"
+                android:text="@string/forgot_password"
                 android:textColor="#606470"
                 android:textSize="15.4sp"/>
 
@@ -143,12 +143,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="28.7dp"
+                android:layout_marginStart="28.7dp"
                 android:layout_marginTop="40.2dp"
-                android:layout_marginRight="28.9dp"
+                android:layout_marginEnd="28.9dp"
                 android:background="@drawable/rect_blue"
                 android:gravity="center"
-                android:text="Log In"
+                android:text="@string/log_in"
                 android:textColor="#fbfbfb"
                 android:textSize="15.4sp" />
 
@@ -165,7 +165,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -176,17 +175,17 @@
                 android:textColor="#606470"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New User?" />
+                android:text="@string/new_user" />
 
             <poppinjay13.projects.android.customfonts.MyTextView_SF_Pro_Display_Medium
                 android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15.4sp"
                 android:textColor="#3277d8"
                 android:onClick="signUp"
-                android:text="Sign up for a new account" />
+                android:text="@string/sign_up_for_a_new_account" />
 
         </LinearLayout>
     </LinearLayout>

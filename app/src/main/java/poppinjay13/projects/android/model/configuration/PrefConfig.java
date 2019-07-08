@@ -48,4 +48,10 @@ public class PrefConfig {
     public void displayToast(String message){
         Toast.makeText(context,message,Toast.LENGTH_SHORT).show();
     }
+
+    public void logOut(){
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.clear();
+        editor.apply();
+    }
 }

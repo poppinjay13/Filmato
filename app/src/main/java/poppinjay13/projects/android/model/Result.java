@@ -2,6 +2,8 @@ package poppinjay13.projects.android.model;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 public class Result {
     @SerializedName("status")
     private Boolean status;
@@ -12,10 +14,19 @@ public class Result {
     @SerializedName("user")
     private User user;
 
+    @SerializedName("ticket")
+    private List<Ticket> ticket;
+
     public Result(Boolean status, String message, User user) {
         this.status = status;
         this.message = message;
         this.user = user;
+    }
+
+    public Result(Boolean status, String message, List<Ticket> ticket) {
+        this.status = status;
+        this.message = message;
+        this.ticket = ticket;
     }
 
     public Result(Boolean status, String message){
@@ -33,5 +44,9 @@ public class Result {
 
     public User getUser() {
         return user;
+    }
+
+    public List<Ticket> getTicket() {
+        return ticket;
     }
 }

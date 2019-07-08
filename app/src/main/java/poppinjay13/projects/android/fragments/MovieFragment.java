@@ -25,7 +25,7 @@ import poppinjay13.projects.android.Config;
 import poppinjay13.projects.android.R;
 import poppinjay13.projects.android.activities.ActivityMovieDetails;
 import poppinjay13.projects.android.adapters.MoviesAdapter;
-import poppinjay13.projects.android.model.movies.MovieItem;
+import poppinjay13.projects.android.model.movies.TicketItem;
 import poppinjay13.projects.android.model.movies.MoviesResponse;
 import poppinjay13.projects.android.rest.API;
 import retrofit2.Call;
@@ -37,7 +37,7 @@ public class MovieFragment extends Fragment {
 
     private Context context;
     private RecyclerView recyclerView = null;
-    private List<MovieItem> movies;
+    private List<TicketItem> movies;
     private ShimmerFrameLayout mshimmerFrameLayout;
     private SwipeRefreshLayout swiper;
 
@@ -56,9 +56,9 @@ public class MovieFragment extends Fragment {
         swiper.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
+                mshimmerFrameLayout.setVisibility(View.VISIBLE);
                 mshimmerFrameLayout.startShimmer();
                 loadMovies();
-                swiper.setRefreshing(false);
             }
         });
         loadMovies();
@@ -99,6 +99,7 @@ public class MovieFragment extends Fragment {
                 recyclerView.setAdapter(new MoviesAdapter(movies, R.layout.list_item_movie, getContext()));
                 mshimmerFrameLayout.stopShimmer();
                 mshimmerFrameLayout.setVisibility(View.GONE);
+                swiper.setRefreshing(false);
             }
 
             @Override

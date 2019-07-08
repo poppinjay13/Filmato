@@ -5,6 +5,6 @@ public class Config {
     public final static String IMAGE_URL_BASE_PATH = "http://image.tmdb.org/t/p/w342//";
     public static final String API_BASE_URL = "http://api.themoviedb.org/3/";
     public final static String API_KEY = "fb9aec69ea8a0c6c9a71c4cdc8bbf358";
-    public static final String BASE_URL = "https://filmato.herokuapp.com/";
+    public static final String BASE_URL = "http://10.51.28.138:8000/";
 
 }

@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MovieItem {
+public class TicketItem {
 
     @SerializedName("poster_path")
     @Expose
@@ -64,9 +64,9 @@ public class MovieItem {
     @Expose
     private Double voteAverage;
 
-    public MovieItem(String posterPath, boolean adult, String overview, String releaseDate, List<Integer> genreIds, Integer id,
-                     String originalTitle, String originalLanguage, String title, String backdropPath, Double popularity,
-                     Integer voteCount, Boolean video, Double voteAverage) {
+    public TicketItem(String posterPath, boolean adult, String overview, String releaseDate, List<Integer> genreIds, Integer id,
+                      String originalTitle, String originalLanguage, String title, String backdropPath, Double popularity,
+                      Integer voteCount, Boolean video, Double voteAverage) {
         this.posterPath = posterPath;
         this.adult = adult;
         this.overview = overview;
@@ -197,7 +197,7 @@ public class MovieItem {
 
     @Override
     public String toString() {
-        return "MovieItem{" +
+        return "TicketItem{" +
                 "posterPath='" + posterPath + '\'' +
                 ", adult=" + adult +
                 ", overview='" + overview + '\'' +

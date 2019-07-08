@@ -14,10 +14,11 @@
         android:layout_margin="10dp"
         android:background="@drawable/rect">
         <TextView
+            android:textStyle="bold"
             android:id="@+id/ticket_no"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TICKET_NO"
+            android:text="@string/ticket_no"
             android:padding="10dp"/>
     </LinearLayout>
     <LinearLayout
@@ -33,31 +34,31 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MOVIE:"
+            android:text="@string/movie"
             android:padding="10dp"
             android:layout_margin="10dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CINEMA:"
+            android:text="@string/cinema"
             android:padding="10dp"
             android:layout_margin="10dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TIME:"
+            android:text="@string/time"
             android:padding="10dp"
             android:layout_margin="10dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DATE:"
+            android:text="@string/date"
             android:padding="10dp"
             android:layout_margin="10dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SEATS:"
+            android:text="@string/seats"
             android:padding="10dp"
             android:layout_margin="10dp"/>
     </LinearLayout>
@@ -69,35 +70,35 @@
             android:id="@+id/ticket_movie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MOVIE_NAME"
+            android:text="@string/movie_name"
             android:padding="10dp"
             android:layout_margin="10dp"/>
         <TextView
             android:id="@+id/ticket_cinema"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CINEMA_NAME"
+            android:text="@string/cinema_name"
             android:padding="10dp"
             android:layout_margin="10dp"/>
         <TextView
             android:id="@+id/ticket_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TIMESTAMP"
+            android:text="@string/timestamp"
             android:padding="10dp"
             android:layout_margin="10dp"/>
         <TextView
             android:id="@+id/ticket_ticket_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DATESTAMP"
+            android:text="@string/datestamp"
             android:padding="10dp"
             android:layout_margin="10dp"/>
         <TextView
             android:id="@+id/ticket_seats_booked"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SEATS BOOKED"
+            android:text="@string/seats_booked"
             android:padding="10dp"
             android:layout_margin="10dp"/>
     </LinearLayout>

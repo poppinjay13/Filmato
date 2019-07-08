@@ -10,10 +10,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <TextView
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rect"
-            android:text="MY TICKETS"
+            android:text="@string/my_tickets"
             android:padding="10dp"
             android:layout_marginRight="35dp"
             android:layout_marginLeft="35dp"
@@ -30,13 +31,14 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="VALID"
+                android:text="@string/valid"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
             <Button
+                android:clickable="false"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PREVIOUS"
+                android:text="@string/previous"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
         </LinearLayout>
@@ -49,7 +51,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NO TICKETS HERE"
+                android:text="@string/no_tickets_here"
                 android:gravity="center"
                 android:padding="50dp"
                 android:textSize="13sp"
@@ -57,17 +59,19 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Purchase some tickets to view them"
+                android:text="@string/purchase_some_tickets_to_view_them"
                 android:gravity="center"
                 android:padding="50dp"/>
         </LinearLayout>
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tickets_recycler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
         </androidx.recyclerview.widget.RecyclerView>
 
         <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/tickets_shimmer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:shimmer_auto_start="false"

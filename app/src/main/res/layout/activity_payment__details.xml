@@ -83,6 +83,8 @@
                         android:padding="15dp"
                         android:textSize="13sp" />
 
+
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -90,7 +92,13 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="18dp"
                     android:background="@drawable/round_border"/>
-
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:layout_margin="@dimen/activity_vertical_margin"
+                        android:gravity="center"
+                        android:text="For development purposes the mpesa stk will always return true to prevent additional charges"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -138,7 +146,7 @@
                     android:background="@drawable/rounded_button"
                     android:gravity="center"
                     android:padding="15dp"
-                    android:text="Complete Purchase"
+                    android:text="Complete Transaction"
                     android:textAllCaps="false"
                     android:textColor="#ffffff" />
 

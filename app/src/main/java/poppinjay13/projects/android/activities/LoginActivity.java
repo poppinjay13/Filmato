@@ -4,17 +4,17 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
 import poppinjay13.projects.android.Config;
@@ -33,6 +33,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class LoginActivity extends AppCompatActivity {
 
+    private static final String TAG = "LoginActivity";
     PrefConfig prefConfig = new PrefConfig();
     GoogleSignInClient mGoogleSignInClient;
     private static final int RC_SIGN_IN = 9001;
@@ -169,6 +170,10 @@ public class LoginActivity extends AppCompatActivity {
         try {
             GoogleSignInAccount account = task.getResult(ApiException.class);
             String personGivenName = account.getGivenName();
+            String personGivenEmail = account.getEmail();
+            prefConfig.writeEmail(personGivenEmail);
+            prefConfig.writeName(personGivenName);
+            prefConfig.writeLoginStatus(true);
             // Signed in successfully, show toast and move on to the main activities.
             Toast.makeText(getApplicationContext(), "Welcome "+personGivenName, Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(LoginActivity.this, NavigationActivity.class);
@@ -178,7 +183,7 @@ public class LoginActivity extends AppCompatActivity {
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
-            //Log.w(TAG, "signInResult:failed code=" + e.getStatusCode());
+            Log.w(TAG, "signInResult:failed code=" + e.getStatusCode());
             Toast.makeText(getApplicationContext(), "Oops! Houston we have a problem.", Toast.LENGTH_SHORT).show();
         }
 
@@ -190,11 +195,11 @@ public class LoginActivity extends AppCompatActivity {
         // Check for existing Google Sign In account, if the user is already signed in the GoogleSignInAccount will be non-null.
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
         if (acct != null) {
-            String personName = acct.getDisplayName();
             String personGivenName = acct.getGivenName();
-            String personFamilyName = acct.getFamilyName();
             String personEmail = acct.getEmail();
-            String personId = acct.getId();
+            prefConfig.writeEmail(personEmail);
+            prefConfig.writeName(personGivenName);
+            prefConfig.writeLoginStatus(true);
             Toast.makeText(getApplicationContext(), "Welcome "+personGivenName, Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(LoginActivity.this, NavigationActivity.class);
             startActivity(intent);
@@ -204,32 +209,10 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    public void logout(View view) {
-        Toast.makeText(getApplicationContext(), "Logging you out", Toast.LENGTH_SHORT).show();
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestEmail()
-                .build();
-        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-        mGoogleSignInClient.revokeAccess()
-                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        Intent intent = new Intent(LoginActivity.this, LoginActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-    }
-
     public void signUp(View view) {
         Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
         startActivity(intent);
         finish();
     }
 
-    // --Commented out by Inspection START (5/2/2019 8:53 AM):
-//    private void showLoginFailed(@StringRes Integer errorString) {
-//        Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
-//    }
-// --Commented out by Inspection STOP (5/2/2019 8:53 AM)
 }

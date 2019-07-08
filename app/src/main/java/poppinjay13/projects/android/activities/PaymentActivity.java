@@ -1,10 +1,9 @@
 package poppinjay13.projects.android.activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -13,6 +12,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import com.androidstudy.daraja.Daraja;
 import com.androidstudy.daraja.DarajaListener;
 import com.androidstudy.daraja.model.AccessToken;
@@ -20,19 +23,33 @@ import com.androidstudy.daraja.model.LNMExpress;
 import com.androidstudy.daraja.model.LNMResult;
 import com.androidstudy.daraja.util.TransactionType;
 
+import java.util.Arrays;
+
+import poppinjay13.projects.android.Config;
 import poppinjay13.projects.android.R;
 import poppinjay13.projects.android.customfonts.EditText_Roboto_Regular;
 import poppinjay13.projects.android.customfonts.MyTextView_Roboto_Medium;
+import poppinjay13.projects.android.model.Payment;
+import poppinjay13.projects.android.model.Result;
+import poppinjay13.projects.android.model.Ticket;
+import poppinjay13.projects.android.model.configuration.PrefConfig;
+import poppinjay13.projects.android.rest.ApiInterface;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class PaymentActivity extends AppCompatActivity implements View.OnClickListener{
     EditText_Roboto_Regular editphone;
     MyTextView_Roboto_Medium btnLipa;
     private LinearLayout mpesa, cards, mpesa_details, card_details;
     public ImageView rightmark1, rightmark2;
-
+    PrefConfig prefConfig = new PrefConfig();
+    Context context = this;
     //declare daraja as a global variable
     Daraja daraja;
-    String phonenumber, amount, cinema, date, time;
+    String phonenumber, amount, cinema, date, time, movie, seats;
     int price;
     public static final String PREFS_NAME = "credentials";
     public static final String key = "phone_number";
@@ -42,6 +59,12 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment__details);
         //on click
+        prefConfig.prefConfig(context);
+        Toolbar toolbar = findViewById(R.id.payment_toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Payment Activity");
+
         mpesa = findViewById(R.id.mpesa);
         cards = findViewById(R.id.cards);
         rightmark1 = findViewById(R.id.rightmark1);
@@ -69,6 +92,8 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
 
         //retrieve amount to be charged
         Intent intent = getIntent();
+        movie = intent.getStringExtra("Movie");
+        Log.d("Extra Movie", movie);
         cinema = intent.getStringExtra("Cinema");
         Log.d("Extra Cinema", cinema);
         date = intent.getStringExtra("Date");
@@ -79,13 +104,17 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
         Log.d("Extra amount", "" +price);
         amount = "" + price;
         Log.d("Price", amount);
+        String[] myArr= intent.getStringArrayExtra("Seats");
+        seats = Arrays.toString(myArr);
+        Toast.makeText(getApplicationContext(),seats, Toast.LENGTH_SHORT);
+
         btnLipa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //get phone number
                 phonenumber = editphone.getText().toString().trim();
                 if (TextUtils.isEmpty(phonenumber)) {
-                    Toast.makeText(PaymentActivity.this, "please insert phone number", Toast.LENGTH_LONG).show();
+                    Toast.makeText(PaymentActivity.this, "please enter phone number", Toast.LENGTH_LONG).show();
                     return;
                 }
                 CheckBox checkBox = findViewById(R.id.contactSave);
@@ -116,10 +145,10 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
 
     }
 
-    private void LipaNaMpesa(String phonenumber, String amount) {
-//party A is the number sending the money.It has to be a valid safaricom phone number
-// phonenumber is the mobile number to receive the stk pin prompt.The number can be the same as partyA.
-//BusinessShort code = PartyB
+    private void LipaNaMpesa(final String phonenumber, final String amount) {
+        //party A is the number sending the money.It has to be a valid safaricom phone number
+        // phonenumber is the mobile number to receive the stk pin prompt.The number can be the same as partyA.
+        //BusinessShort code = PartyB
         final LNMExpress lnmExpress = new LNMExpress(
                 "174379",
                 "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919",
@@ -139,6 +168,8 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
                     public void onResult(@NonNull LNMResult lnmResult) {
                         Log.i(PaymentActivity.this.getClass().getSimpleName(), lnmResult.ResponseDescription);
                         Toast.makeText(getApplicationContext(), "M-PESA Direct Payment Starting", Toast.LENGTH_SHORT).show();
+                        //logPayment(phonenumber,amount);
+                        //createTicket(movie,cinema,date,time,price);
                     }
 
                     @Override
@@ -150,6 +181,86 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
                     }
                 });
 
+    }
+
+    private void createTicket(String cinema,String movie, String date, String time, int prices) {
+        String email = prefConfig.readEmail();
+        String price = Integer.toString(prices);
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(Config.BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        //Defining retrofit api service
+        ApiInterface service = retrofit.create(ApiInterface.class);
+
+        //Defining the ticket object as we need to pass it with the call
+        final Ticket ticket = new Ticket(email,movie,cinema,date,time,seats,price);
+
+        //defining the call
+        Call<Result> call = service.logTicket(
+                ticket.getEmail(),
+                ticket.getMovie(),
+                ticket.getCinema(),
+                ticket.getDate(),
+                ticket.getTime(),
+                ticket.getSeats(),
+                ticket.getPrice()
+        );
+
+        //calling the api
+        call.enqueue(new Callback<Result>() {
+            @Override
+            public void onResponse(Call<Result> call, Response<Result> response) {
+                //displaying the message from the response as toast
+                Toast.makeText(getApplicationContext(),"The ticket has been reserved", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(PaymentActivity.this, NavigationActivity.class);
+                startActivity(intent);
+
+            }
+
+            @Override
+            public void onFailure(Call<Result> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), "The payment transaction was unsuccessful", Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    private void logPayment(String phonenumber, String amount) {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(Config.BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        //Defining retrofit api service
+        ApiInterface service = retrofit.create(ApiInterface.class);
+
+        //Defining the payment object as we need to pass it with the call
+        final Payment payment = new Payment(phonenumber, amount);
+
+        //defining the call
+        Call<Result> call = service.logPayment(
+                payment.getPhone(),
+                payment.getAmount()
+        );
+
+        //calling the api
+        call.enqueue(new Callback<Result>() {
+            @Override
+            public void onResponse(Call<Result> call, Response<Result> response) {
+                //displaying the message from the response as toast
+                Toast.makeText(getApplicationContext(),"The transaction is being processed", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(PaymentActivity.this, NavigationActivity.class);
+                startActivity(intent);
+
+            }
+
+            @Override
+            public void onFailure(Call<Result> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), "The payment transaction was unsuccessful", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     public void onClick(View view) {
@@ -171,5 +282,10 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
                 card_details.setVisibility(View.VISIBLE);
                 break;
         }
+    }
+    @Override
+    public boolean onSupportNavigateUp(){
+        finish();
+        return true;
     }
 }
