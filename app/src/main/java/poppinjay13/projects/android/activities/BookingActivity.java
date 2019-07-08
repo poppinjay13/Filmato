@@ -191,7 +191,7 @@ public class BookingActivity extends Activity {
             final Object tagObj = child.getTag();
             if (tagObj != null && tagObj.equals(tag)) {
                 views.add(child);
-                //child.setBackgroundResource(R.id.ic_taken_seat);
+                //child.setBackgroundResource(R.id.ic_taken_seat1);
             }
 
         }

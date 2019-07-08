@@ -23,6 +23,7 @@ import com.androidstudy.daraja.model.LNMExpress;
 import com.androidstudy.daraja.model.LNMResult;
 import com.androidstudy.daraja.util.TransactionType;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 import poppinjay13.projects.android.Config;
@@ -47,6 +48,7 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
     public ImageView rightmark1, rightmark2;
     PrefConfig prefConfig = new PrefConfig();
     Context context = this;
+    ArrayList<String> seatsArr = new ArrayList<>();
     //declare daraja as a global variable
     Daraja daraja;
     String phonenumber, amount, cinema, date, time, movie, seats;
@@ -103,10 +105,11 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
         price = intent.getIntExtra("Amount", 0);
         Log.d("Extra amount", "" +price);
         amount = "" + price;
-        Log.d("Price", amount);
-        String[] myArr= intent.getStringArrayExtra("Seats");
-        seats = Arrays.toString(myArr);
-        Toast.makeText(getApplicationContext(),seats, Toast.LENGTH_SHORT);
+        Log.d("Extra Price", amount);
+        seatsArr = intent.getStringArrayListExtra("Seats");
+        String[] str = GetStringArray(seatsArr);
+        seats = Arrays.toString(str);
+        Log.d("Extra Seats", seats);
 
         btnLipa.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -287,5 +290,22 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
     public boolean onSupportNavigateUp(){
         finish();
         return true;
+    }
+
+    // Function to convert ArrayList<String> to String[]
+    public static String[] GetStringArray(ArrayList<String> arr)
+    {
+
+        // declaration and initialise String Array
+        String str[] = new String[arr.size()];
+
+        // ArrayList to Array Conversion
+        for (int j = 0; j < arr.size(); j++) {
+
+            // Assign each value to String array
+            str[j] = arr.get(j);
+        }
+
+        return str;
     }
 }
