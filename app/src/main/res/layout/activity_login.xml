@@ -24,7 +24,7 @@
                 android:layout_height="102dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
-                android:src="@drawable/movie" />
+                android:src="@drawable/splash" />
 
             <poppinjay13.projects.android.customfonts.MyTextView_SF_Pro_Display_Medium
                 android:layout_gravity="center"

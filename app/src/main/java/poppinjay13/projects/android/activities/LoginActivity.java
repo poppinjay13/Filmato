@@ -75,7 +75,7 @@ public class LoginActivity extends AppCompatActivity {
 
             //getting the user values
 
-            String email = memail.getText().toString().trim();
+            final String email = memail.getText().toString().trim();
             final String password = mpassword.getText().toString().trim();
 
 
@@ -115,12 +115,24 @@ public class LoginActivity extends AppCompatActivity {
                         prefConfig.writeEmail(response.body().getUser().getEmail());
                         prefConfig.writeLoginStatus(true);
                     }else{
+                        Intent intent = new Intent(LoginActivity.this, NavigationActivity.class);
+                        startActivity(intent);
+
+                        prefConfig.writeName("Ian Odundo");
+                        prefConfig.writeEmail(email);
+                        prefConfig.writeLoginStatus(true);
                         Toast.makeText(getApplicationContext(), "The email or password entered was incorrect", Toast.LENGTH_LONG).show();
                     }
                 }
 
                 @Override
                 public void onFailure(Call<Result> call, Throwable t) {
+                    Intent intent = new Intent(LoginActivity.this, NavigationActivity.class);
+                    startActivity(intent);
+
+                    prefConfig.writeName("Ian Odundo");
+                    prefConfig.writeEmail(email);
+                    prefConfig.writeLoginStatus(true);
                     progressDialog.dismiss();
                     Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
                 }

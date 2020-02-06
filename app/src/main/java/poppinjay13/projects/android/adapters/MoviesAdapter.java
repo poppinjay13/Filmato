@@ -59,8 +59,8 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
         String image_url = IMAGE_URL_BASE_PATH + movies.get(position).getPosterPath();
         Picasso.with(context)
                 .load(image_url)
-                .placeholder(android.R.drawable.sym_def_app_icon)
-                .error(android.R.drawable.sym_def_app_icon)
+                .placeholder(R.drawable.loader)
+                .error(R.drawable.loader)
                 .into(holder.movieImage);
         holder.movieTitle.setText(movies.get(position).getTitle());
         holder.movieDescription.setText(movies.get(position).getOverview());

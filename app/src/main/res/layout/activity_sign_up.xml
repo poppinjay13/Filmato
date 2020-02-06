@@ -25,7 +25,7 @@
                 android:layout_height="131dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="50.2dp"
-                android:src="@drawable/movie" />
+                android:src="@drawable/icon" />
             <poppinjay13.projects.android.customfonts.MyTextView_SF_Pro_Display_Medium
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"

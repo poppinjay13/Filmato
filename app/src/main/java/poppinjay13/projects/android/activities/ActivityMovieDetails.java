@@ -146,7 +146,7 @@ public class ActivityMovieDetails extends AppCompatActivity {
                 + "<head>"
                 + "<style type=\"text/css\">body{color: #525252;}"
                 + "</style></head>"
-                + "<body><h1>Overview:</h1>"
+                + "<body><h3>Synopsis:</h3>"
                 + movie.getOverview()
                 + "</body>"
                 + "</html>";
@@ -155,6 +155,7 @@ public class ActivityMovieDetails extends AppCompatActivity {
 
         Picasso.with(this)
                 .load(Config.IMAGE_URL_BASE_PATH + movie.getBackdropPath())
+                .placeholder(R.drawable.loader)
                 .into(img_movie, new Callback() {
                     @Override
                     public void onSuccess() {
